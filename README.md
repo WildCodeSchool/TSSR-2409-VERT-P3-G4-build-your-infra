@@ -46,7 +46,7 @@ Activités et répartition des tâches
 | Martin (PO) | Organisation du groupe, INSTALL.md, USER_GUIDE.md |
 | Yohann (SM) | Organisation du groupe, README.md, INSTALL.md, USER_GUIDE.md |
 | Bruno | Organisation du groupe,  |
-| Lionel | Organisation du groupe,  |
+| Lionel | Organisation du groupe, ébauche réseau  |
 ### **Sprint 2 : semaine du 25 au 29 Novembre 2024**
 
 Activités et répartition des tâches
