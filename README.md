@@ -8,15 +8,15 @@
 * ### :four: [Choix techniques, contraintes et solutions]()
 * ### :five: [Conclusion]()
 
-[## :one: Présentation du Projet et Objectifs]()
+## :one: [Présentation du Projet et Objectifs]()
 
 
 
-[## :two: Mise en contexte]()
+## :two: [Mise en contexte]()
 
 
 
-[## :two: Présentation des membres du groupe et rôles par Sprint]()
+## :two: [Présentation des membres du groupe et rôles par Sprint]()
 
 Le groupe est composé de :
 * **Bruno Pugliese**
