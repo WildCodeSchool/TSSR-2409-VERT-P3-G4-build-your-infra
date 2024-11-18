@@ -2,11 +2,11 @@
 
 ## **Sommaire**
 
-1. [Présentation du Projet et Objectifs de la semaine]()
-2. [Mise en contexte]()
-3. [Présentation des membres du groupe et rôles par Sprint]()
-4. [Choix techniques, contraintes et solutions]()
-5. [Conclusion]()
+* ### :one: [Présentation du Projet et Objectifs de la semaine]()
+* ### :two: [Mise en contexte]()
+* ### :three: [Présentation des membres du groupe et rôles par Sprint]()
+* ### :four: [Choix techniques, contraintes et solutions]()
+* ### :five: [Conclusion]()
 
 ## [**Présentation du Projet et Objectifs**]()
 
