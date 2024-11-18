@@ -2,21 +2,21 @@
 
 ## **Sommaire**
 
-1. Présentation du Projet et Objectifs de la semaine
-2. Mise en contexte
-3. Présentation des membres du groupe et rôles par Sprint
-4. Choix techniques, contraintes et solutions
-5. Conclusion
+1. [Présentation du Projet et Objectifs de la semaine]()
+2. [Mise en contexte]()
+3. [Présentation des membres du groupe et rôles par Sprint]()
+4. [Choix techniques, contraintes et solutions]()
+5. [Conclusion]()
 
-## **Présentation du Projet et Objectifs**
-
-
-
-## **Mise en contexte**
+## [**Présentation du Projet et Objectifs**]()
 
 
 
-## **Présentation des membres du groupe et rôles par Sprint**
+## [**Mise en contexte**]()
+
+
+
+## [**Présentation des membres du groupe et rôles par Sprint**]()
 
 Le groupe est composé de :
 * **Bruno Pugliese**
