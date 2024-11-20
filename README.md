@@ -34,7 +34,7 @@ Activités et répartition des tâches
 
 | **NOM** | **Tâches effectuées** |
 | :--: | :----------: |
-| Martin (PO) | Organisation du groupe, INSTALL.md, USER_GUIDE.md |
+| Martin (PO) | Organisation du groupe, README.md, INSTALL.md, USER_GUIDE.md |
 | Yohann (SM) | Organisation du groupe, README.md, INSTALL.md, USER_GUIDE.md |
 | Bruno | Organisation du groupe,  |
 | Lionel | Organisation du groupe, ébauche réseau, table de routage  |
