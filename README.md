@@ -2,16 +2,16 @@
 
 ## **Sommaire**
 
-* ### :one: [Présentation du Projet et Objectifs](https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G4-build-your-infra/blob/main/README.md#one-pr%C3%A9sentation-du-projet-et-objectifs)
+* ### :one: [Présentation du Projet et Objectifs](https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G4-build-your-infra/blob/main/README.md#one-pr%C3%A9sentation-du-projet-et-objectifs-1)
 * ### :two: [Mise en contexte](https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G4-build-your-infra/blob/main/README.md#two-mise-en-contexte-1)
-* ### :three: [Présentation des membres du groupe et rôles par Sprint](https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G4-build-your-infra/blob/main/README.md#two-pr%C3%A9sentation-des-membres-du-groupe-et-r%C3%B4les-par-sprint)
+* ### :three: [Présentation des membres du groupe et rôles par Sprint](https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G4-build-your-infra/blob/main/README.md#three-pr%C3%A9sentation-des-membres-du-groupe-et-r%C3%B4les-par-sprint-1)
 * ### :four: [Choix techniques, contraintes et solutions]()
 * ### :five: [Conclusion]()
 
 ***
 ***
 
-## :one: [Présentation du Projet et Objectifs](https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G4-build-your-infra/blob/main/README.md#one-pr%C3%A9sentation-du-projet-et-objectifs-de-la-semaine)
+## :one: [Présentation du Projet et Objectifs](https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G4-build-your-infra/blob/main/README.md#one-pr%C3%A9sentation-du-projet-et-objectifs)
 
 
 
