@@ -16,7 +16,8 @@
 
 
 ## :two: [Mise en contexte](https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G4-build-your-infra/blob/main/README.md#two-mise-en-contexte)
-
+Nous sommes un groupe de prestataires freelance embauchés par l'entreprise _Pharmgreen_ pour mettre en place une architecture réseau.
+Le DSI nous a demandé d'envisager d'utiliser la technologie par ultrasons WOOFI®.
 
 
 ## :three: [Présentation des membres du groupe et rôles par Sprint](https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G4-build-your-infra/blob/main/README.md#three-pr%C3%A9sentation-des-membres-du-groupe-et-r%C3%B4les-par-sprint)
