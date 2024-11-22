@@ -91,7 +91,7 @@ Sous-réseau 09: Juridique
 Adresse de réseau : 172.16.6.0/28 => 16 adresses (2^4) 32-4 = 28 pour le ss réseau
 Adresse Ip du routeur : 172.16.6.1
 Début de plage IP disponible : 172.16.6.2
-Fin de plage IP disponible : 172.16.6.15
+Fin de plage IP disponible : 172.16.6.14
 Adresse de broadcast : 172.16.6.15
 ```
 ```
