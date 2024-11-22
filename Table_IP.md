@@ -12,7 +12,7 @@
 
 > **On réserve une adresse IP dans chaque sous-réseau pour une adresse de routeur**
 
-## Table de routage
+## Table d'adressage
 ```
 Sous-réseau 01: Ventes et Développement Commercial
 46 hôtes + 3 adresses réservées
@@ -103,7 +103,7 @@ Début de plage IP disponible : 172.14.6.18
 Fin de plage IP disponible : 172.14.6.30
 Adresse de broadcast : => 172.14.6.31
 ```
-## Tableau de routage:
+## Tableau d'adressage:
 
 | **Sous-réseau**             | **Adresse réseau** | **Masque** | **Adresse IP du routeur** | **Plage IP disponible pour les hôtes** | **Adresse de broadcast** |
 |-----------------------------|--------------------|------------|---------------------------|----------------------------------------|--------------------------|
