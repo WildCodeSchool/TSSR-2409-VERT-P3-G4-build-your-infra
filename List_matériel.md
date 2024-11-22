@@ -1,6 +1,6 @@
 ## Liste du matériel prévisionnel
 
-- 1 serveur ayant pour fonction:
+- 1 serveur ayant pour Rôle:
     - Serveur Active Directory;
     - Serveur DNS;
     - Serveur DHCP;
