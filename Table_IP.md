@@ -8,7 +8,7 @@
 
 ## Réseau: 
 
-> **Le réseau `172.16.5.0/24` est complet on doit donc changer le prefixe et passer à un réseau plus large en `172.16.5.0/23`**
+> **Le réseau `172.14.5.0/24` est complet et publique on doit donc changer le prefixe et passer à un réseau plus large et privé en `172.16.5.0/23`**
 
 > **On réserve une adresse IP dans chaque sous-réseau pour une adresse de routeur**
 
