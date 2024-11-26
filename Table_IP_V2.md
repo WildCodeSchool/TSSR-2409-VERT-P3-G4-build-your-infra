@@ -8,10 +8,10 @@
 
 ## Réseau: 
 
-> **Suite erreurs de documents, le réseau devra être sur cette plage :**
-**Adresse IP de réseau** : 10.15.0.0/16
-**Adresse de passerelle** : 10.15.255.254
-**Adresse IP DNS** : 10.15.255.254
+> **Suite erreurs de documents, le réseau devra être sur cette plage :**  
+**Adresse IP de réseau** : 10.15.0.0/16  
+**Adresse de passerelle** : 10.15.255.254  
+**Adresse IP DNS** : 10.15.255.254  
 
 > **On réserve une adresse IP dans chaque sous-réseau pour une adresse de routeur**
 
