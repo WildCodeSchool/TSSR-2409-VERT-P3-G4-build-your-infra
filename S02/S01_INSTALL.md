@@ -1,12 +1,11 @@
 ## SOMMAIRE /
-
-### 1) Windows 2022 + rôles
-  ### 1.1) Redondance AD-DS, DHCP, DNS
-### 2) windows Core + rôles
-### 3) ADDS 
-  ### 3.1) OU et Groupes
-  ### 3.2) Utilisateurs
-### 4) Debian
+* ### 1) Windows 2022 + rôles
+  * ### 1.1) Redondance AD-DS, DHCP, DNS
+* ### 2) windows Core + rôles
+* ### 3) ADDS 
+  * ### 3.1) OU et Groupes
+  * ### 3.2) Utilisateurs
+* ### 4) Debian
 
 ### 1) Windows 2022 + rôles
   ### 1.1) Redondance AD-DS, DHCP, DNS
