@@ -22,7 +22,7 @@ $departments = $data | Select-Object -ExpandProperty Département -Unique
 $parentOU = "OU=Departments,DC=test,DC=lan"
 
 # Fonction pour vérifier et créer l'OU parent si elle n'existe pas
-function Create-ParentOU {
+function CreateParentOU {
     param ([string]$ouDN)
 
     # Vérifier si l'OU parent existe déjà => adapter les DC
@@ -45,9 +45,6 @@ function Remove-DeletionProtection {
     param ([string]$ouDN)
 
     try {
-        # Récupérer l'OU existante
-        $ou = Get-ADOrganizationalUnit -Identity $ouDN
-
         # Désactiver la protection contre la suppression accidentelle
         Set-ADOrganizationalUnit -Identity $ouDN -ProtectedFromAccidentalDeletion $false
             }
@@ -57,7 +54,7 @@ function Remove-DeletionProtection {
 }
 
 # Créer l'OU parent si nécessaire
-Create-ParentOU -ouDN $parentOU
+CreateParentOU -ouDN $parentOU
 
 # Créer les OUs pour chaque département
 foreach ($department in $departments) {
