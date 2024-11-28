@@ -8,10 +8,6 @@
 * ### 5) Debian
 
 
-
-
-
-
 1) # INSTALL GUIDE SCRIPT CREATION OU "Create_OU.ps1"
 
 ## Prérequis
@@ -106,8 +102,6 @@ Si vous avez besoin d'aide supplémentaire ou souhaitez personnaliser davantage 
 * #### [ADDS](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#368-cr%C3%A9er-un-adds-) 
 
 
-
-
 * ### 4) Debian
 ### Intégration du serveur débian => ADDS maitre
 ### Configurer les deuxcarte réseaux(interne, bridge)
@@ -117,13 +111,12 @@ Si vous avez besoin d'aide supplémentaire ou souhaitez personnaliser davantage 
   systemctl restart networking
 ![ad2](https://github.com/user-attachments/assets/880a767b-fc37-4026-b9b8-b82d75e64e79)
 ### Ici le mieux est de se connecter en ssh depuis le serveur maitre( le commande sont longue)
-  apt -y install realmd sssd sssd-tools libnss-sss libpam-sss adcli samba-common-bin oddjob oddjob-mkhomedir packagekit
+   
+    apt -y install realmd sssd sssd-tools libnss-sss libpam-sss adcli samba-common-bin oddjob oddjob-mkhomedir packagekit
+
 ### Editer le fichier de résolution DNS
     nano /etc/resolv.conf
 ![ad1](https://github.com/user-attachments/assets/42811358-c13a-4a5b-90c3-86c9405814c3)
-### Editer le fichier hostname avec le nom FQDN du domaine.
-### Ce nom se trouve ici⬇️
-![ad1](https://github.com/user-attachments/assets/201c9d14-0492-49fe-b8d0-3369c59c29ba)
 ![ad1](https://github.com/user-attachments/assets/b8f9846f-5a96-4e8d-ac81-084e76e88302)
 ![ad1](https://github.com/user-attachments/assets/f3fd9c7d-3252-4d07-89a5-907fa5019514)
 ### Connection au dommaine
