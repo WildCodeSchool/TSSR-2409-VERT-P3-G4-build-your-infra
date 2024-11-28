@@ -106,24 +106,24 @@ Si vous avez besoin d'aide supplémentaire ou souhaitez personnaliser davantage 
 ### Intégration du serveur débian => ADDS maitre
 ### Configurer les deuxcarte réseaux(interne, bridge)
 ### Se connecter en root
-  nano /etc/network/interfaces
-![ad1](https://github.com/user-attachments/assets/d41a5c11-5144-4c96-a981-31732f3580a3)
-  systemctl restart networking
-![ad2](https://github.com/user-attachments/assets/880a767b-fc37-4026-b9b8-b82d75e64e79)
-### Ici le mieux est de se connecter en ssh depuis le serveur maitre( le commande sont longue)
-   
-    apt -y install realmd sssd sssd-tools libnss-sss libpam-sss adcli samba-common-bin oddjob oddjob-mkhomedir packagekit
+  
+     nano /etc/network/interfaces
 
+![ad1](https://github.com/user-attachments/assets/593cf91c-d977-4e20-a742-0250ff14c349)
+  
+     systemctl restart networking
+
+### Ici le mieux est de se connecter en ssh depuis le serveur maitre( les commande sont longue)
+     apt -y install realmd sssd sssd-tools libnss-sss libpam-sss adcli samba-common-bin oddjob oddjob-mkhomedir packagekit
 ### Editer le fichier de résolution DNS
     nano /etc/resolv.conf
-![ad1](https://github.com/user-attachments/assets/42811358-c13a-4a5b-90c3-86c9405814c3)
-![ad1](https://github.com/user-attachments/assets/b8f9846f-5a96-4e8d-ac81-084e76e88302)
-![ad1](https://github.com/user-attachments/assets/f3fd9c7d-3252-4d07-89a5-907fa5019514)
+![ad1](https://github.com/user-attachments/assets/8f5040da-7b95-4d11-82c9-84970cbb2fd6)
+![image](https://github.com/user-attachments/assets/4c270260-7308-467c-b9ee-529469d28cda)
 ### Connection au dommaine
     realm join --user=administrator <NomDeDomaine>
-![ad1](https://github.com/user-attachments/assets/2d948447-8964-41a6-8d0f-ba20d8a0f973)
 ### Vérifier que le serveur est bien là
-![image](https://github.com/user-attachments/assets/9f6f5fe1-5865-42a4-90e9-5efd7838df24)
+![ad1](https://github.com/user-attachments/assets/73431a49-1520-4ea1-a2d7-6f4299b48c10)
+
 
 
 
