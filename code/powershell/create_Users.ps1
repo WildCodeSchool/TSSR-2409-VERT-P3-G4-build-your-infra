@@ -5,6 +5,8 @@ $CSVData = Import-CSV -Path $CSVFile -Delimiter "," -Encoding Default
 # Boucle pour parcourir les lignes CSV
  Foreach($Utilisateur in $CSVData){
 
+# Création de variable pour remplir les champs lors de la création des utilisateurs
+
   $UtilisateurPrenom = $Utilisateur.Prenom
   $UtilisateurNom = $Utilisateur.Nom
   $UtilisateurLogin = $UtilisateurNom.Replace(" ",".").ToLower() + "." + ($UtilisateurPrenom).Substring(0,1).Replace(" ",".").ToLower()
@@ -14,12 +16,17 @@ $CSVData = Import-CSV -Path $CSVFile -Delimiter "," -Encoding Default
   $UtilisateurDepartement = $Utilisateur.Département
   $UtilisateurManager = $Utilisateur.Managernom
 
+# Vérification si l'utilisateur a déjà été créé
+
   if (Get-ADUser -Filter {SamAccountName -eq $UtilisateurLogin})
   { 
       Write-Warning "L'identifiant $UtilisateurLogin existe déjà dans l'AD"
   }
   else
   {
+
+  #Création de chaque utilisateur avec les variables
+  
       New-ADUser -Name "$UtilisateurNom $UtilisateurPrenom" `
                  -DisplayName "$UtilisateurNom $UtilisateurPrenom" `
                  -GivenName "$UtilisateurPrenom" `
