@@ -6,9 +6,14 @@
   * ### 3.1) OU et Groupes
   * ### 3.2) Utilisateurs
 * ### 4) Debian
-
+---
+---
+---
 ### 1) Windows 2022 + rôles
+---
+---
   ### 1.1) Redondance AD-DS, DHCP, DNS
+---
 #### :pencil2:Prérequis 2 serveurs win 2022.:pencil2:
 
 ### Le détails des instalations des différents role n'est pas détaillé ici
