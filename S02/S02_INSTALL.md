@@ -1,6 +1,7 @@
 ## REDONDANCE
 * ### 1) Script
 * ### 2) Windows 2022 + rôles
+  * ### 2.2) Redondance DHCP 
 * ### 3) windows Core + rôles
 * ### 4) ADDS 
   * ### 4.1) OU et Groupes
