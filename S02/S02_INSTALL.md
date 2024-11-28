@@ -2,7 +2,8 @@
 * ### 1) Script
 * ### 2) Windows 2022 + rôles
   * ### 2.2) Redondance DHCP 
-* ### 3) windows Core + rôles
+  * ### 2.3) Redondance DNS
+* ### 3)windows Core + rôles
 * ### 4) ADDS 
   * ### 4.1) OU et Groupes
   * ### 4.2) Utilisateurs
@@ -122,10 +123,26 @@ Si vous avez besoin d'aide supplémentaire ou souhaitez personnaliser davantage 
 ### Puis finish
 ### Vérifier d'être en Successful partout
 ![ad1](https://github.com/user-attachments/assets/1cc9be01-dcd4-475f-a45c-841d3d4717a2)
-
-
-
-
+   * ### 2.3) Redondance DNS
+### Autoriser le tansfert au niveau du serveur primaire
+    Set-DnsServerPrimaryZone Pharmgreen.com -SecureSecondaries TransferAnyServer -Notify Notify
+### Sur le serveur core créer une secondary zone
+    Add-DnsServerSecondaryZone -Name Pharmgreen.com -ZoneFile Pharmgreen.com.dns -MasterServers @192.168.40.5
+### Retourner sur le serveur principale (master)
+### Créer un nouvel enregistrement de type A ou AAAA.
+### Remplir le nom du nouvel enregistrement(peux importe le nom) (bleu)
+##### ⚠️Une Reverse Lookup Zone doit être présente sur le serveur maitre, dans le cas contraire,la créer!⚠️
+### Ip du serveur secondaire (rouge)
+### Cocher la case Create associated (PTR) record (vert)
+![ad1](https://github.com/user-attachments/assets/319f5b87-5730-466d-9d20-86d8bc3764b1)
+###  Puis Add Host
+### Sur le serveur maitre Action => Properties
+![ad1](https://github.com/user-attachments/assets/29a79308-804e-4a5e-90f2-402c9a37bdf6)
+### Vérifier que le serveur secondaire est présent
+![ad1](https://github.com/user-attachments/assets/dd3bfbc1-2a02-468b-9391-ec12052cf44e)
+### Pour finir Zone Transfers (bleu) 
+### Cocher Only to servers listed on the Name Server tab (rouge)
+![ad1](https://github.com/user-attachments/assets/e095a4eb-faa1-40f8-8105-719b68d17287)
 
 * ### 3) windows Core + rôles
 * ### 4) ADDS 
