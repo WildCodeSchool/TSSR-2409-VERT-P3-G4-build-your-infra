@@ -108,3 +108,15 @@ Ce script est flexible et peut être facilement **adapté à différents besoins
 En suivant ce guide, vous pourrez personnaliser ce script pour répondre aux exigences de votre organisation et l'intégrer facilement dans votre flux de travail quotidien.
 
 
+## 2 USER GUIDE SCRIPT CREATION Utilisateur "Create_Users.ps1"
+
+## Introduction
+
+Ce script permet de créer des utilisateurs dans un activive directory grâce a un fichier csv
+
+## Fonctionnalités du Script
+
+1. **Création des utilsateurs à partir d'un fichier CSV** : Le script recupère les différentes informations pour pouvoir créer les utilisateurs et les placer dans les différents services.
+2. **Vérification et création de chaque utilisateur** : Le script vérifie si l'utilisateur existe déjà. S'il n'existe pas, le script crée l'utilisateur avec les différents paramétres définis puis passe au suivant.
+3. **Demande de changement de mot de passe** : Une fois qu'un compte utilsateur est créé, l'utilsateur devra rentrer ces identifiants et changer le mot de passe .
+
