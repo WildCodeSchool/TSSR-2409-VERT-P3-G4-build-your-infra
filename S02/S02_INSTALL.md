@@ -92,17 +92,45 @@ Une fois ces étapes terminées, vous devriez être en mesure de créer et gére
 Si vous avez besoin d'aide supplémentaire ou souhaitez personnaliser davantage le script, n'hésitez pas à consulter la documentation ou à me contacter pour plus d'assistance.
 
 ### 2) Windows 2022 + rôles
-
-### :one: Installation des roles 
-
+   ### 2.1) Installation des roles 
 ### Le détails des instalations des différents role n'est pas détaillé, dans ce document INSTALL.md , mais ici ⬇️
-
 * #### [DHCP](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#4422-windows-22) 
 * #### [DNS](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#414-windows-1)
 * #### [ADDS](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#368-cr%C3%A9er-un-adds-) 
+   ### 2.2) Redondance DHCP
+  ### Vérifier les serveurs autorisés => clic droit DHCP (bleu) => Manage authorized servers...(rouge)
+![ad1](https://github.com/user-attachments/assets/2eb6d9e9-f246-4b1b-b7bb-fb9c22b64c2a)
+### Le serveur est bien autorisé
+![ad1](https://github.com/user-attachments/assets/fceacffe-6cca-4e83-ac71-8bd87b173318)
+### Pour démarer le redondance :
+### Clic droit sur Scope => Configure Failover...
+![ad1](https://github.com/user-attachments/assets/62037b97-0528-4b3a-92d3-1981d5f5d4bf)
+### Rentrer l'IP du serveur de secours
+![ad1](https://github.com/user-attachments/assets/364c975c-8db4-4039-b49e-83128d96cada)
+![image](https://github.com/user-attachments/assets/4554e99b-d527-40b4-90e4-2aa32818c854)
+### Configuration ⬇️
+### Lien entre serveurs (bleu)
+### Choisir Hot standby(rouge), 
+##### (l'autre option permet de partager la charge dans l'attribution des adresses IP)
+![ad1](https://github.com/user-attachments/assets/86ca4878-0616-4f7a-9858-1a4c002d48a6)
+### Pour la suite diminuer l'intervale de 60 min par defaut à 5 min
+##### (c'est le temps qu mettre le serveur deux à prendre le relais)
+### Et cocher le case Enable Message Authentification
+#### (Cela permet de chiffrer le echange au niveau de la trame)
+![ad1](https://github.com/user-attachments/assets/264bc16d-07d9-480b-b259-462e80e1040e)
+### Puis finish
+### Vérifier d'être en Successful partout
+![ad1](https://github.com/user-attachments/assets/1cc9be01-dcd4-475f-a45c-841d3d4717a2)
 
 
-* ### 4) Debian
+
+
+
+* ### 3) windows Core + rôles
+* ### 4) ADDS 
+  * ### 4.1) OU et Groupes
+  * ### 4.2) Utilisateurs
+* ### 5) Debian
 ### Intégration du serveur débian => ADDS maitre
 ### Configurer les deuxcarte réseaux(interne, bridge)
 ### Se connecter en root
@@ -124,41 +152,6 @@ Si vous avez besoin d'aide supplémentaire ou souhaitez personnaliser davantage 
 ### Vérifier que le serveur est bien là
 ![ad1](https://github.com/user-attachments/assets/73431a49-1520-4ea1-a2d7-6f4299b48c10)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### 2) windows Core + rôles
-### 3) ADDS 
-  ### 3.1) OU et Groupes
-  ### 3.2) Utilisateurs
-### 4) Debian
 
 
 
