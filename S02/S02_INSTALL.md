@@ -1,3 +1,88 @@
+# INSTALL GUIDE SCRIPT CREATION OU "Create_OU.ps1"
+
+## Prérequis
+
+Avant d'exécuter le script, assurez-vous que votre environnement est correctement configuré et que les éléments suivants sont en place :
+
+1. **PowerShell** : Le script est conçu pour être exécuté dans PowerShell, qui est installé par défaut sur les systèmes Windows.
+2. **Module Active Directory** : Vous devez avoir installé le module `ActiveDirectory` pour interagir avec Active Directory via PowerShell. Ce module est disponible dans les **Outils d'Administration de Serveur (RSAT)**.
+3. **Accès à Active Directory** : Vous devez disposer des droits d'administrateur pour créer des OUs et modifier les objets dans Active Directory.
+
+## Étapes d'Installation du Script
+
+### 1. Télécharger le Script
+
+Téléchargez le script `Create-OU.ps1` et placez-le dans un répertoire accessible sur votre serveur ou votre machine Windows.
+
+- Vous pouvez créer un dossier nommé `Scripts` dans **C:\** ou **D:\** pour organiser vos scripts.
+  
+### 2. Préparer le Fichier CSV
+
+Le script nécessite un fichier CSV contenant les informations sur les départements ou services à créer. Le format du fichier CSV doit correspondre aux colonnes utilisées dans le script. Par défaut, les colonnes attendues sont :
+
+- **Nom** (Nom du département ou service)
+- **Service** (Nom du service ou département)
+  
+Exemple de fichier CSV :
+
+```csv
+Nom,Service
+Département A,Développement
+Département B,Marketing
+```
+
+### 3. Modifier les Paramètres du Script
+
+Avant d'exécuter le script, vous devrez peut-être ajuster certains paramètres dans le fichier `Create-OU.ps1` pour qu'ils correspondent à votre environnement Active Directory. Les principaux paramètres à vérifier sont :
+
+- **$csvPath** : Le chemin d'accès au fichier CSV.
+  ```powershell
+  $csvPath = "C:\chemin\vers\votre\fichier.csv"
+  ```
+
+- **$parentOU** : Le chemin d'accès à l'OU parent sous laquelle les nouvelles OUs seront créées.
+  ```powershell
+  $parentOU = "OU=Departments,DC=monDomaine,DC=com"
+  ```
+
+- **$ouProtection** : Si vous souhaitez désactiver la protection contre la suppression accidentelle, laissez cette option activée :
+  ```powershell
+  $ouProtection = $true
+  ```
+
+### 4. Exécuter le Script
+
+Une fois les étapes précédentes complétées, ouvrez **PowerShell** en tant qu'administrateur et exécutez le script en utilisant la commande suivante :
+
+```powershell
+cd C:\cheminers\le\script
+.\Create-OU.ps1
+```
+
+Cela exécutera le script, créera les OUs spécifiées dans le fichier CSV et supprimera la protection contre la suppression accidentelle des OUs créées.
+
+### 5. Vérification des Résultats
+
+Après l'exécution du script, vous pouvez vérifier si les OUs ont été correctement créées dans Active Directory en utilisant la console **Utilisateurs et ordinateurs Active Directory** (Active Directory Users and Computers). Les nouvelles OUs devraient apparaître sous l'OU parent spécifiée.
+
+## Résolution des Problèmes
+
+### Problème : **Accès refusé**
+
+Si vous obtenez une erreur d'accès refusé, assurez-vous que vous exécutez PowerShell avec des droits d'administrateur et que votre compte dispose des autorisations nécessaires pour créer des OUs dans Active Directory.
+
+### Problème : **Erreur de syntaxe dans le fichier CSV**
+
+Si le script rencontre des erreurs liées au format du fichier CSV, assurez-vous que les colonnes sont bien nommées et qu'il n'y a pas de cellules vides ou de caractères invalides dans les données.
+
+## Conclusion
+
+Une fois ces étapes terminées, vous devriez être en mesure de créer et gérer des unités organisationnelles dans votre Active Directory de manière automatisée. Ce script est flexible et peut être facilement adapté pour répondre à vos besoins spécifiques en matière de gestion des OUs.
+
+Si vous avez besoin d'aide supplémentaire ou souhaitez personnaliser davantage le script, n'hésitez pas à consulter la documentation ou à me contacter pour plus d'assistance.
+
+---
+
 ## REDONDANCE
 * ### 1) Windows 2022 + rôles
   * ### 1.1) Redondance AD-DS, DHCP, DNS
