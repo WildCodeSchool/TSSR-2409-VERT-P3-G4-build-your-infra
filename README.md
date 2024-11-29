@@ -44,10 +44,10 @@ Activités et répartition des tâches
 
 | **NOM** | **Tâches effectuées** |
 | :--: | :----------: |
-| Yohann (PO) | |
-| Lionel (SM) |  |
-| Bruno |   |
-| Martin |   |
+| Yohann (PO) | Création & config serveur Windows 2022 Core, création serveur Debian, nouvelle table de routage |
+| Lionel (SM) | Script OU |
+| Bruno | Création & config serveur Windows 2022 GUI, script utilisateurs |
+| Martin | Réplication Windows Server 2022, config serveur Debian |
 ### **Sprint 3 : semaine du 02 au 06 Décembre 2024**
 
 Activités et répartition des tâches
