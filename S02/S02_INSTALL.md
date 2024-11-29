@@ -3,6 +3,7 @@
 * ### 2) Windows 2022 + rôles
   * ### 2.2) Redondance DHCP 
   * ### 2.3) Redondance DNS
+  * ### 2.4) Redondance ADDS
 * ### 3)windows Core + rôles
 * ### 4) ADDS 
   * ### 4.1) OU et Groupes
@@ -10,7 +11,7 @@
 * ### 5) Debian
 
 
-1) # INSTALL GUIDE SCRIPT CREATION OU "Create_OU.ps1"
+# 1)  `INSTALL GUIDE SCRIPT CREATION OU "Create_OU.ps1"`
 
 ## Prérequis
 
@@ -93,62 +94,62 @@ Une fois ces étapes terminées, vous devriez être en mesure de créer et gére
 
 Si vous avez besoin d'aide supplémentaire ou souhaitez personnaliser davantage le script, n'hésitez pas à consulter la documentation ou à me contacter pour plus d'assistance.
 
-### 2) Windows 2022 + rôles
-   ### 2.1) Installation des roles 
+# `2) Windows 2022 + rôles`
+   ### `2.1) Installation des roles` 
 ### Le détails des instalations des différents role n'est pas détaillé, dans ce document INSTALL.md , mais ici ⬇️
 * #### [DHCP](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#4422-windows-22) 
 * #### [DNS](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#414-windows-1)
 * #### [ADDS](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#368-cr%C3%A9er-un-adds-) 
-   ### 2.2) Redondance DHCP
-  ### Vérifier les serveurs autorisés => clic droit DHCP (bleu) => Manage authorized servers...(rouge)
+   # `2.2) Redondance DHCP`
+  ### 🔷Vérifier les serveurs autorisés => clic droit DHCP (bleu) => Manage authorized servers...(rouge)
 ![ad1](https://github.com/user-attachments/assets/2eb6d9e9-f246-4b1b-b7bb-fb9c22b64c2a)
-### Le serveur est bien autorisé
+### 🔷 Le serveur est bien autorisé
 ![ad1](https://github.com/user-attachments/assets/fceacffe-6cca-4e83-ac71-8bd87b173318)
-### Pour démarer le redondance :
+### 🔷 Pour démarer le redondance :
 ### Clic droit sur Scope => Configure Failover...
 ![ad1](https://github.com/user-attachments/assets/62037b97-0528-4b3a-92d3-1981d5f5d4bf)
-### Rentrer l'IP du serveur de secours
+### 🔷 Rentrer l'IP du serveur de secours
 ![ad1](https://github.com/user-attachments/assets/364c975c-8db4-4039-b49e-83128d96cada)
 ![image](https://github.com/user-attachments/assets/4554e99b-d527-40b4-90e4-2aa32818c854)
-### Configuration ⬇️
+### 🔷 Configuration ⬇️
 ### Lien entre serveurs (bleu)
 ### Choisir Hot standby(rouge), 
 ##### (l'autre option permet de partager la charge dans l'attribution des adresses IP)
 ![ad1](https://github.com/user-attachments/assets/86ca4878-0616-4f7a-9858-1a4c002d48a6)
-### Pour la suite diminuer l'intervale de 60 min par defaut à 5 min
-##### (c'est le temps qu mettre le serveur deux à prendre le relais)
-### Et cocher le case Enable Message Authentification
+###  🔷Pour la suite diminuer l'intervale de 60 min par defaut à 5 min
+##### (c'est le temps que va mettre le serveur deux à prendre le relais)
+### 🔷 Et cocher le case Enable Message Authentification
 #### (Cela permet de chiffrer le echange au niveau de la trame)
 ![ad1](https://github.com/user-attachments/assets/264bc16d-07d9-480b-b259-462e80e1040e)
-### Puis finish
+### 🔷 Puis finish
 ### Vérifier d'être en Successful partout
 ![ad1](https://github.com/user-attachments/assets/1cc9be01-dcd4-475f-a45c-841d3d4717a2)
-   * ### 2.3) Redondance DNS
-### Autoriser le tansfert au niveau du serveur primaire
+   * # `2.3) Redondance DNS`
+### 🔷 Autoriser le tansfert au niveau du serveur primaire
     Set-DnsServerPrimaryZone Pharmgreen.com -SecureSecondaries TransferAnyServer -Notify Notify
-### Sur le serveur core créer une secondary zone
+### 🔷 Sur le serveur core créer une secondary zone
     Add-DnsServerSecondaryZone -Name Pharmgreen.com -ZoneFile Pharmgreen.com.dns -MasterServers @192.168.40.5
-### Retourner sur le serveur principale (master)
-### Créer un nouvel enregistrement de type A ou AAAA.
-### Remplir le nom du nouvel enregistrement(peux importe le nom) (bleu)
+### ▶️ Retourner sur le serveur principale (master)
+### 🏗️ Créer un nouvel enregistrement de type A ou AAAA.
+### 🔷 Remplir le nom du nouvel enregistrement(peux importe le nom) (bleu)
 ##### ⚠️Une Reverse Lookup Zone doit être présente sur le serveur maitre, dans le cas contraire,la créer!⚠️
-### Ip du serveur secondaire (rouge)
-### Cocher la case Create associated (PTR) record (vert)
+### 1️⃣ Ip du serveur secondaire (rouge)
+### 2️⃣ la case Create associated (PTR) record (vert)
 ![ad1](https://github.com/user-attachments/assets/319f5b87-5730-466d-9d20-86d8bc3764b1)
-###  Puis Add Host
-### Sur le serveur maitre Action => Properties
+### 🔷 Puis Add Host
+### 🔷 Sur le serveur maitre Action => Properties
 ![ad1](https://github.com/user-attachments/assets/29a79308-804e-4a5e-90f2-402c9a37bdf6)
-### Vérifier que le serveur secondaire est présent
+### 🔷  Vérifier que le serveur secondaire est présent
 ![ad1](https://github.com/user-attachments/assets/dd3bfbc1-2a02-468b-9391-ec12052cf44e)
-### Pour finir Zone Transfers (bleu) 
-### Cocher Only to servers listed on the Name Server tab (rouge)
+### 1️⃣ Pour finir Zone Transfers (bleu) 
+### 2️⃣ Cocher Only to servers listed on the Name Server tab (rouge)
 ![ad1](https://github.com/user-attachments/assets/e095a4eb-faa1-40f8-8105-719b68d17287)
-
-* ### 3) windows Core + rôles
-* ### 4) ADDS 
-  * ### 4.1) OU et Groupes
-  * ### 4.2) Utilisateurs
-* ### 5) Debian
+# `2.4) Redondance ADDS`
+* # `3) windows Core + rôles`
+* # `4) ADDS` 
+  * # `4.1) OU et Groupes`
+  * # `4.2) Utilisateurs`
+* # `5) Debian`
 ### Intégration du serveur débian => ADDS maitre
 ### Configurer les deuxcarte réseaux(interne, bridge)
 ### Se connecter en root
