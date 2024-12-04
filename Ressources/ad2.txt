@@ -1,0 +1,30 @@
+$Users = Import-Csv -Delimiter "," -Path "C:\Utilisateurs.csv"            
+foreach ($User in $Users)            
+{            
+    $Displayname = $User.Prenom + " " + $User.Nom            
+    $UserFirstname = $User.Prenom            
+    $UserLastname = $User.Nom
+    $Prenom =  $UserFirstname.ToLower()
+    $Nom =  $UserLastName.ToLower()             
+    $OU = "OU=" + $User.Departement + "," + "dc=mondomaine,dc=local"                     
+    $SAM = $Prenom+$Nom            
+    $UPN = $Prenom + "." + $Nom + "@" + "mondomaine.local"
+    echo $UPN         
+    $Departement = $User.Departement     
+    $Password = $User.MotDePasse       
+    New-ADOrganizationalUnit -Name $User.Departement -Path "DC=mondomaine,DC=local" -ProtectedFromAccidentalDeletion $false
+    New-ADUser -Name "$Displayname" -DisplayName "$Displayname" -SamAccountName $SAM -UserPrincipalName $UPN -EmailAddress $UPN -GivenName $UserFirstname -Surname $UserLastname -Description $Description -AccountPassword (ConvertTo-SecureString $Password -AsPlainText -Force) -Enabled $true -Path "$OU" -ChangePasswordAtLogon $false –PasswordNeverExpires $true     
+
+    Get-ADUser -Filter * -SearchBase $OU | Set-ADUser –scriptPath “\\NOM-DU-SERVEUR\$Departement.bat”
+    New-ADGroup -Name $User.Departement -Description $User.Departement -DisplayName $User.Departement -Path $OU -SamAccountName $User.Departement -GroupScope Global
+}
+if ($User.Departement -eq "Informatique")
+{
+
+    Add-ADGroupMember -Identity "Administrateurs" -Members $SAM
+}
+else
+{
+
+    Add-ADGroupMember -Identity $User.Departement -Members $SAM
+}

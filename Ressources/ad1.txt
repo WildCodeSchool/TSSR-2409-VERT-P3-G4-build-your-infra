@@ -1,0 +1,40 @@
+$CSVFile = "C:\Users\Administrator\Downloads\s01_Pharmgreen.xlsx - Feuille 1.csv"
+$CSVData = Import-CSV -Path $CSVFile -Delimiter "," -Encoding UTF8
+
+foreach($Utilisateur in $CSVData) {
+    $UtilisateurPrenom = $Utilisateur.Prenom
+    $UtilisateurNom = $Utilisateur.Nom
+    $UtilisateurLogin = $UtilisateurNom.Replace(" ",".").ToLower() + "." + ($UtilisateurPrenom).Substring(0,1).ToLower()
+    $UtilisateurEmail = "$UtilisateurLogin@Pharmgreen.com"
+    $UtilisateurMotDePasse = "P@ssword123456789"
+    $UtilisateurFonction = $Utilisateur.fonction
+    $UtilisateurDepartement = $Utilisateur.Département
+    $UtilisateurManager = $Utilisateur.Managernom
+
+    if (-not $UtilisateurPrenom -or -not $UtilisateurNom) {
+        Write-Warning "L'utilisateur $UtilisateurNom $UtilisateurPrenom a des informations manquantes"
+        continue
+    }
+
+    if (Get-ADUser -Identity $UtilisateurLogin -ErrorAction SilentlyContinue) {
+        Write-Warning "L'identifiant $UtilisateurLogin existe déjà dans l'AD"
+    } else {
+        try {
+            New-ADUser -Name "$UtilisateurNom $UtilisateurPrenom" `
+                       -DisplayName "$UtilisateurNom $UtilisateurPrenom" `
+                       -GivenName "$UtilisateurPrenom" `
+                       -Surname $UtilisateurNom `
+                       -SamAccountName $UtilisateurLogin `
+                       -UserPrincipalName "$UtilisateurLogin@Pharmgreen.com" `
+                       -EmailAddress $UtilisateurEmail `
+                       -Title $UtilisateurFonction `
+                       -Path "OU=$UtilisateurDepartement,OU=Utilisateurs,DC=Pharmgreen,DC=com" `
+                       -AccountPassword (ConvertTo-SecureString $UtilisateurMotDePasse -AsPlainText -Force) `
+                       -ChangePasswordAtLogon $true `
+                       -Enabled $true
+        }
+        catch {
+            Write-Error "Erreur lors de la création de l'utilisateur $UtilisateurLogin : $_"
+        }
+    }
+}
