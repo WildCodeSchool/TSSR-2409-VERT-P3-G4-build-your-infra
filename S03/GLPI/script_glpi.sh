@@ -1,4 +1,4 @@
-# Lien vers le tuto: S03\script_GLPI\user_guide_script.md
+# Lien vers le tuto: S03\GLPI\USER_GUIDE_GLPI_SCRIPT.md
 
 #!/bin/bash
 
