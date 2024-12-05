@@ -2,7 +2,7 @@
 
 Ce tutoriel décrit les étapes nécessaires pour installer et configurer **GLPI** (Gestionnaire Libre de Parc Informatique) à l'aide d'un script Bash automatisé.
 
-Le script est [ici](S03\script_GLPI\install_glpi.sh).
+Le script est [ici](S03\script_GLPI\script_glpi.sh).
 
 Le script est structuré en plusieurs sections :
 
