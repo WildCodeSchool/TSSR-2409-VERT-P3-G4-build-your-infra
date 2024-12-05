@@ -4,7 +4,7 @@ Ce tutoriel décrit les étapes nécessaires pour installer et configurer **GLPI
 
 Le script est [ici](S03\script_GLPI\script_glpi.sh).
 
-Le script est structuré en plusieurs sections :
+Vous pouvez le télécharger via la commande `wget https://raw.githubusercontent.com/WildCodeSchool/TSSR-2409-VERT-P3-G4-build-your-infra/refs/heads/main/S03/GLPI/script_glpi.sh`
 
 ---
 
