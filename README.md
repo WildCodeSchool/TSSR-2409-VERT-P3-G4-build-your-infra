@@ -54,10 +54,10 @@ Activités et répartition des tâches
 
 | **NOM** | **Tâches effectuées** |
 | :--: | :----------: |
-| Lionel (PO) | Glpi+Script|
-| Bruno (SM) | Glpi |
-| Yohann | GPO   |
-| Martin | GPO  |
+| Lionel (PO) | Glpi+Script+Doc|
+| Bruno (SM) | Glpi+Doc |
+| Yohann | GPO+Doc   |
+| Martin | GPO+Doc  |
 ### **Sprint 4 : semaine du 09 au 13 Décembre 2024**
 
 Activités et répartition des tâches
