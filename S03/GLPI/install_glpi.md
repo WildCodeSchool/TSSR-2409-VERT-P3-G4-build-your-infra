@@ -138,3 +138,7 @@ Ajoutez une ligne qui mappe le nom d'hôte db23_glpi à l'adresse IP de votre se
 
 voir le tuto https://www.it-connect.fr/installation-pas-a-pas-de-glpi-10-sur-debian-12/
 
+## 8. Synchronisation de L'annuaire LDAP
+
+Pour intégrer les utilisateurs de l'ADDS dans GLPI , il suffit d'importer l'annuaire:
+
