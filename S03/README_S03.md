@@ -7,6 +7,7 @@
    * ##### Restriction des périphériques amovible
    * ##### Écran de veille avec mot de passe en sortie
    * ##### Blocage complet ou partiel au panneau de configuration
+   * ##### Gestion de Windows update
 * #### Standarts 
    * ##### Fond d'écran
    * ##### Mappage de lecteurs
@@ -19,7 +20,10 @@
 * #### Gestion de parc : Inclusion des objets AD
 ### 3️⃣`Script`
 * #### Instalation de GLPI => Debian 
+### 4️⃣`Plan synoptique`
+![Capture d'écran 2024-12-06 110448](https://github.com/user-attachments/assets/07ad857a-b3d5-403e-9d7d-8efda0097c5f)
 
+### 5️⃣`Tableau Vlan`
 
 
 
