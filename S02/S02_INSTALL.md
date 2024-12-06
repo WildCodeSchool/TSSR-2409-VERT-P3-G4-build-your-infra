@@ -146,6 +146,9 @@ Si vous avez besoin d'aide supplémentaire ou souhaitez personnaliser davantage 
 ![ad1](https://github.com/user-attachments/assets/e095a4eb-faa1-40f8-8105-719b68d17287)
 # `2.4) Redondance ADDS`
 * # `3) windows Core + rôles`
+### Le détail de l'instalation et de la configuration AD-DS sur Windows Server CORE n'est pas détaillé dans ce document INSTALL.md, mais ici ⬇️
+* #### [Installation et configuration AD-DS sur Windows Server CORE](https://github.com/Prehistory-Banane/Pharmgreen/blob/main/Installer%20un%20serveur%20Windows%20Server%202022%20en%20mode%20Core.md)
+ 
 * # `4) ADDS` 
   * # `4.1) OU et Groupes`
   * # `4.2) Utilisateurs`
