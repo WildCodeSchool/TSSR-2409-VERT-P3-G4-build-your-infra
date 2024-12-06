@@ -142,4 +142,20 @@ voir le tuto https://www.it-connect.fr/installation-pas-a-pas-de-glpi-10-sur-deb
 
 Pour intégrer les utilisateurs de l'ADDS dans GLPI , il suffit d'importer l'annuaire:
 
+Entrer les différentes informations nécessaire
+
 ![Capture d'écran 2024-12-06 095342](https://github.com/user-attachments/assets/868f736b-5662-4309-b827-fa12a0c5b18e)
+
+Puis se rendre dans l'onglet "Utilisateur" , 
+
+Cliquer sur "Liaison annuaire LDAP "
+
+![Capture d'écran 2024-12-06 095452](https://github.com/user-attachments/assets/88d6dba1-32b1-4c38-85dc-e7bc69fc7ec1)
+
+![Capture d'écran 2024-12-06 110307](https://github.com/user-attachments/assets/fb126077-a377-42e1-9e44-e420b46b03c4)
+
+
+
+
+
+
