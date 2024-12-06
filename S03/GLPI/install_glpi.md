@@ -152,8 +152,17 @@ Cliquer sur "Liaison annuaire LDAP "
 
 ![Capture d'écran 2024-12-06 095452](https://github.com/user-attachments/assets/88d6dba1-32b1-4c38-85dc-e7bc69fc7ec1)
 
+Cliquer sur "Importer de nouveaux utilisateurs"
+
 ![Capture d'écran 2024-12-06 110307](https://github.com/user-attachments/assets/fb126077-a377-42e1-9e44-e420b46b03c4)
 
+Cliquer sur "Mode expert"
+
+![Capture d'écran 2024-12-06 110605](https://github.com/user-attachments/assets/76f41903-0071-4c80-8e9f-0aaa6f811838)
+
+La base de donnée de recherche , il ne reste lus qu'a valider en cliquant sur "Rechercher" et sélectionner les utilisteurs voulus.
+
+Les nouveaux utilisateurs sont visibles dans l'onglet "Adminstration/Utilisateurs"
 
 
 
