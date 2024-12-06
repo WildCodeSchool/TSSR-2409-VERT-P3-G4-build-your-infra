@@ -1,6 +1,6 @@
 # Importer les données
 $CSVFile = "C:\Users\Administrator\Downloads\s01_Pharmgreen.xlsx - Feuille 1.csv"
-$CSVData = Import-CSV -Path $CSVFile -Delimiter "," -Encoding Default
+$CSVData = Import-CSV -Path $CSVFile -Delimiter ",
 
 # Boucle pour parcourir les lignes CSV
  Foreach($Utilisateur in $CSVData){
