@@ -21,7 +21,8 @@
 ### 3️⃣`Script`
 * #### Instalation de GLPI => Debian 
 ### 4️⃣`Plan synoptique`
-![Capture d'écran 2024-12-06 110448](https://github.com/user-attachments/assets/07ad857a-b3d5-403e-9d7d-8efda0097c5f)
+![Capture d'écran 2024-12-06 110448](https://github.com/user-attachments/assets/755cbbb0-6265-49ec-80d3-a24cba7ee144)
+
 
 ### 5️⃣`Tableau Vlan`
 
