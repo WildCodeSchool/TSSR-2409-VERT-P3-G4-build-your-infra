@@ -142,3 +142,4 @@ voir le tuto https://www.it-connect.fr/installation-pas-a-pas-de-glpi-10-sur-deb
 
 Pour intégrer les utilisateurs de l'ADDS dans GLPI , il suffit d'importer l'annuaire:
 
+![Capture d'écran 2024-12-06 095342](https://github.com/user-attachments/assets/868f736b-5662-4309-b827-fa12a0c5b18e)
