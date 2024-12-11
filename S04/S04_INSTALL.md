@@ -12,6 +12,10 @@
 #### Dans Interfaces : Interfaces Assignments => Add => choisir le Vlan souhaité et configurer
 ![ad1](https://github.com/user-attachments/assets/8b1b6ce1-8256-4aa1-b21e-29036bcc8530)
 
+
+
+
+
 * ### 2) Régles Firewall
 ### 1️⃣ `Editions`
 
