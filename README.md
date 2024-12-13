@@ -64,10 +64,10 @@ Activités et répartition des tâches
 
 | **NOM** | **Tâches effectuées** |
 | :--: | :----------: |
-| Bruno (PO) |  |
-| Martin (SM) |  |
-| Lionel |   |
-| Yohann |   |
+| Bruno (PO) | Pfsense+firewall |
+| Martin (SM) | Télémétrie |
+| Lionel | plan d'adressage  |
+| Yohann | Identification des machines  |
 ### **Sprint 5 : semaine du 16 au 20 Décembre 2024**
 
 Activités et répartition des tâches
