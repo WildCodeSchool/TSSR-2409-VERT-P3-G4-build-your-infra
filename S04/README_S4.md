@@ -24,4 +24,5 @@
 ### Objectifs Secondaires
 ### 3️⃣`Sécurité - Télémétrie` 
 * #### Mise en place via GPO
+* #### Récupération des GPO => SRV
 * #### Mise en place Via script
