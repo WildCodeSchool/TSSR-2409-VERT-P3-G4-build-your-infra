@@ -1,5 +1,4 @@
 # S04
-Activités
 
 | **NOM** | **Tâches effectuées** |
 | :--: | :----------: |
