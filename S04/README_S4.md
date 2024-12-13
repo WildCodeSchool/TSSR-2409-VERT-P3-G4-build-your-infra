@@ -3,7 +3,7 @@
 | **NOM** | **Tâches effectuées** |
 | :--: | :----------: |
 | Bruno  | Product owner |
-| Martin  | Scrum masterTélémétrie |
+| Martin  | Scrum master |
 | Lionel | Technicien  |
 | Yohann | Technicien  |
 
