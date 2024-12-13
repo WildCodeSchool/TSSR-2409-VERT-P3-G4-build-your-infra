@@ -26,3 +26,5 @@
 * #### Mise en place via GPO
 * #### Récupération des GPO => SRV
 * #### Mise en place Via script
+### Objectifs Optionnels
+* #### Mise en place de routeurs
