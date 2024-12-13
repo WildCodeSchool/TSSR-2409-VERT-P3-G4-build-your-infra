@@ -1,5 +1,12 @@
 # S04
+Activités et répartition des tâches
 
+| **NOM** | **Tâches effectuées** |
+| :--: | :----------: |
+| Bruno (PO) | Pfsense+firewall |
+| Martin (SM) | Télémétrie |
+| Lionel | plan d'adressage  |
+| Yohann | Identification des machines  |
 
 ## SOMMAIRE :
 ### Objectifs Principaux
