@@ -1,6 +1,6 @@
 # S04
 
-| **NOM** | **Tâches effectuées** |
+| **NOM** | **Roles** |
 | :--: | :----------: |
 | Bruno  | Product owner |
 | Martin  | Scrum master |
