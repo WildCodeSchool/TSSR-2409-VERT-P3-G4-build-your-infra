@@ -6,7 +6,7 @@
 * #### Utiliser les principes de gestion de règles
 * #### mise en place de vlans via pfsense et tag
 * #### mise en place des cartes réseaux sur les vlans attribués
-* #### plan d'addressage + plan réseau
+* #### plan d'adressage + plan réseau
 ### 2️⃣`Identification des machines dans Proxmox` 
 * #### Notes
 * #### Nom de la machine
