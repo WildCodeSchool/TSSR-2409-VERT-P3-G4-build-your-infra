@@ -1,12 +1,12 @@
 # S04
-Activités et répartition des tâches
+Activités
 
 | **NOM** | **Tâches effectuées** |
 | :--: | :----------: |
-| Bruno (PO) | Pfsense+firewall |
-| Martin (SM) | Télémétrie |
-| Lionel | plan d'adressage  |
-| Yohann | Identification des machines  |
+| Bruno  | Product owner |
+| Martin  | Scrum masterTélémétrie |
+| Lionel | Technicien  |
+| Yohann | Technicien  |
 
 ## SOMMAIRE :
 ### Objectifs Principaux
