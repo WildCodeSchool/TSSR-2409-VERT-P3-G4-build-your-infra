@@ -1,0 +1,19 @@
+# S04
+## SOMMAIRE :
+### Objectifs Principaux
+### 1️⃣`Gestion Firewall`
+* #### Mise en place de règles de pare-feu WAN, LAN, DMZ
+* #### Utiliser les principes de gestion de règles
+* #### mise en place de vlans via pfsense et tag
+* #### mise en place des cartes réseaux sur les vlans attribués
+* #### plan d'addressage + plan réseau
+### 2️⃣`Identification des machines dans Proxmox` 
+* #### Notes
+* #### Nom de la machine
+* #### Services/Rôles/Logiciels (détails)
+* #### Source
+* #### Tags
+### Objectifs Secondaires
+### 3️⃣`Sécurité - Télémétrie` 
+* #### Mise en place via GPO
+* #### Mise en place Via script
