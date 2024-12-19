@@ -24,7 +24,7 @@ Voici les composants mis en place pour le laboratoire :
 
 Les mots de passe utilisés pour les différentes machines :
 
-- **Client** : `@zerty1*`
+- **Client** : `@zerty1*` (1er mot de passe à changer au démarrage `Azerty1*`)
 - **Serveurs** : `Azerty1*`
 
 ---
