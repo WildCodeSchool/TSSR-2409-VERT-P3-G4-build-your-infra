@@ -37,8 +37,8 @@ Le serveur GLPI est installé sur une machine virtuelle à base de Debian. Voici
   - Connecter le serveur GLPI au réseau via une carte réseau liée au serveur pfSense pour un accès Internet sur le bon VLAN.
 
 - **Intégration et installation** :
-  1. Intégrer le serveur GLPI au [domaine](#).
-  2. Installer GLPI manuellement en suivant ce [guide](#).
+  1. Intégrer le serveur GLPI au [domaine](Server_GLPI/Server_to_Domain.md).
+  2. Installer GLPI manuellement en suivant ce [guide](Server_GLPI/install_glpi.md).
   3. Option alternative : Installer GLPI via un [script dédié](Server_GLPI/USER_GUIDE_GLPI_SCRIPT.md).
 
 - **Configuration** :
