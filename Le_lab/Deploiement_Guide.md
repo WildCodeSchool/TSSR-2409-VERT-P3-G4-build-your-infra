@@ -66,3 +66,5 @@ Le serveur pfSense est pré-installé et pré-configuré pour les besoins du lab
   - Paramétrer les VLANs et configurer les règles de pare-feu en suivant ce [guide](Server_pfsense).
 
 ---
+
+Vous trouverez toutes les informations de configuration en suivant ce [lien](README_deploiement.md) telque MDP, adresses IP,...
