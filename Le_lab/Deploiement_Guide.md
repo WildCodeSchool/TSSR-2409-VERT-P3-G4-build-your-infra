@@ -7,7 +7,7 @@ Le serveur est installé sur une Vm Windows server 2022 équipé de 4go de ram m
 
 - Configuration IP fixe + installation Service ADDS et création du DC pharmgreen.com et service DNS
 
-- Configuration et importation [OU](Le_lab/Server_AD/OU)
+- Configuration et importation [OU](https://github.com/WildCodeSchool/TSSR-2409-VERT-P3-G4-build-your-infra/tree/bf92d81557342c7128f9f94cf3986e2f663db61e/Le_lab/Server_AD/OU)
 - Importation et création des [Utilisateurs](Le_lab/Server_AD/Utilisateur)
 - Configurations des [GPO](Le_lab/Server_AD/GPO)
 - Gestion des [Logs](Le_lab/Server_AD/Logs)
