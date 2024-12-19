@@ -2,7 +2,8 @@
 
 ## Avancement en fin de semaine
 
-![mettre image tableau]()
+![S3](https://github.com/user-attachments/assets/b99fa373-f0bc-446d-801e-b0a446d56e31)
+
 
 ## Principaux 
 
