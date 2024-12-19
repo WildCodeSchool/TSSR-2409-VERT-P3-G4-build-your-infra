@@ -1,35 +1,68 @@
-# Guide de déploiement et de configuration du Lab complet
+# Guide de Déploiement et de Configuration du Lab Complet
 
+## Le Serveur Active Directory (AD)
 
-## Le serveur AD
+Le serveur Active Directory est déployé sur une machine virtuelle exécutant Windows Server 2022. Voici les spécifications minimales et la configuration initiale requises :
 
-Le serveur est installé sur une Vm Windows server 2022 équipé de 4go de ram minimum, un DD de 50Go minimum et connecté sur le réseau via une carte réseau relié au serveur pfsense lui donnant accés à internet via le bon Vlan.
+- **Configuration minimale** :
+  - 4 Go de RAM minimum.
+  - Un disque dur de 50 Go minimum.
+  - Connexion réseau via une carte liée au serveur pfSense, permettant l'accès à Internet sur le bon VLAN.
 
-- Configuration IP fixe + installation Service ADDS et création du DC pharmgreen.com et service DNS
+- **Étapes de configuration** :
+  1. Attribuer une adresse IP fixe au serveur.
+  2. Installer les services Active Directory Domain Services (ADDS).
+  3. Créer le domaine `pharmgreen.com` et configurer le service DNS.
 
-- Configuration et importation [OU](Server_AD/OU)
-- Importation et création des [Utilisateurs](Server_AD/Utilisateur)
-- Configurations des [GPO](Server_AD/GPO)
-- Gestion des [Logs](Server_AD/Logs)
+- **Gestion et configuration** :
+  - Configuration et importation des [Unités d'Organisation (OU)](Server_AD/OU).
+  - Importation et création des [utilisateurs](Server_AD/Utilisateur).
+  - Mise en place des [stratégies de groupe (GPO)](Server_AD/GPO).
+  - Gestion des [logs](Server_AD/Logs).
 
-## Le serveur de Fichier
+---
 
-## Le serveur GLPI
+## Le Serveur de Fichiers
 
-Le serveur GLPI est installer sur une Vm Débian et il est connecté sur le réseau via une carte réseau relié au serveur pfsense lui donnant accés à internet via le bon Vlan.
+### À définir
+(Compléter avec les étapes et les configurations spécifiques pour ce serveur.)
 
-- On intègre le serveur au [Domaine]()
-- On installe le serveur [GLPI en manuel]() ou on installe [GLPI via script](Le_lab/Server_GLPI/USER_GUIDE_GLPI_SCRIPT.md)
-- On configure le serveur [GLPI](Le_lab/Server_GLPI/install_glpi.md)
+---
 
-## Le serveur Core Redondance
+## Le Serveur GLPI
 
-Le serveur pour la redondance est installer sur une vm windows serveur 2022 en mode CORE et il est connecté sur le réseau via une carte réseau relié au serveur pfsense lui donnant accés à internet via le bon Vlan.
+Le serveur GLPI est installé sur une machine virtuelle à base de Debian. Voici les étapes pour sa configuration :
 
-- Intégration et installation en suivant ce [lien](Le_lab/Server_Core_Redondance)
+- **Connexion réseau** :
+  - Connecter le serveur GLPI au réseau via une carte réseau liée au serveur pfSense pour un accès Internet sur le bon VLAN.
 
-## Le serveur Pfsense
+- **Intégration et installation** :
+  1. Intégrer le serveur GLPI au [domaine](#).
+  2. Installer GLPI manuellement en suivant ce [guide](#).
+  3. Option alternative : Installer GLPI via un [script dédié](Server_GLPI/USER_GUIDE_GLPI_SCRIPT.md).
 
-Le serveur Pfsense nous est livré déjà installé et paramétré.
+- **Configuration** :
+  - Configurer GLPI en suivant les instructions disponibles ici : [installation de GLPI](Server_GLPI/install_glpi.md).
 
-- [Paramétrage des Vlan et configuration des Firewalls](Le_lab/Server_pfsense)
+---
+
+## Le Serveur Core Redondance
+
+Ce serveur est déployé sur une machine virtuelle exécutant Windows Server 2022 en mode Core. Voici les éléments essentiels à prendre en compte :
+
+- **Connexion réseau** :
+  - Connecter le serveur au réseau via une carte liée au serveur pfSense pour un accès Internet sur le bon VLAN.
+
+- **Configuration** :
+  - Intégrer et installer en suivant ce [lien](Server_Core_Redondance).
+
+---
+
+## Le Serveur pfSense
+
+Le serveur pfSense est pré-installé et pré-configuré pour les besoins du lab. Voici les points principaux à vérifier ou ajuster :
+
+- **Configuration du réseau** :
+  - Paramétrer les VLANs et configurer les règles de pare-feu en suivant ce [guide](Server_pfsense).
+
+---
