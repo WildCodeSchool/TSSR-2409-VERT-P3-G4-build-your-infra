@@ -14,7 +14,7 @@ Voici les composants mis en place pour le laboratoire :
 
 ## Adresse IP de nos Serveurs
 
-- **Serveur pfSense** : 10.15.255.254 ???
+- **Serveur pfSense** : 10.15.255.254 
 - **Serveur AD** : 10.15.0.36/27
 - **Serveur GLPI** : 10.15.0.35/27
 - **Serveur Core** (redondance) : 10.15.0.36/27
