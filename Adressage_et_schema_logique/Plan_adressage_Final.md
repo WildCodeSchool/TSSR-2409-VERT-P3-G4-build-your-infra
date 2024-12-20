@@ -9,7 +9,7 @@
 ## Plan d'adressage
 
 
-| ID  | Sous-réseau               | Adresses total| Adresse réseau | Masque CIDR | Masque    | Début plage IP  | Fin plage IP     | Adresse broadcast |
+| ID  | Sous-réseau               | Adresses total| Adresse réseau | Masque CIDR | Masque    | Début plage IP  | Fin plage IP     | Adresse de passerelleAdresse broadcast |
 |-----|---------------------------|--------------|----------------|-------------|-------------------|-----------------|------------------|-------------------|
 | 5   | VLAN DC                   | 4            | 10.15.0.0      | /30         | 255.255.255.252   | 10.15.0.1       | 10.15.0.2        | 10.15.0.3         |
 | 10  | VLAN Administration       | 16           | 10.15.0.16     | /28         | 255.255.255.240   | 10.15.0.17      | 10.15.0.30       | 10.15.0.31        |
