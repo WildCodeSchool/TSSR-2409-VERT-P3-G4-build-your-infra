@@ -1,6 +1,6 @@
 ## Script gestion des horaires d'accès pour les utilisateurs
 
-Function Set-LogonHours{ 
+Function Set-LogonHours{
    [CmdletBinding()] 
    Param( 
    [Parameter(Mandatory=$True)][ValidateRange(0,23)]$TimeIn24Format, 
