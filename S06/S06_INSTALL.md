@@ -4,7 +4,6 @@ Function Set-LogonHours{
    [CmdletBinding()] 
    Param( 
    [Parameter(Mandatory=$True)][ValidateRange(0,23)]$TimeIn24Format, 
-   
    [Parameter(Mandatory=$True,ValueFromPipeline=$True,ValueFromPipelineByPropertyName=$True,Position=0)]$Identity, 
    [parameter(mandatory=$False)][ValidateSet("WorkingDays", "NonWorkingDays")]$NonSelectedDaysare="NonWorkingDays", 
    [parameter(mandatory=$false)][switch]$Sunday, 
