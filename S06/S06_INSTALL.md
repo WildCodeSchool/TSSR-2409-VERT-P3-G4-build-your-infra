@@ -1,5 +1,5 @@
 ## Script gestion des horaires d'accès pour les utilisateurs
-'
+
 Function Set-LogonHours{
    [CmdletBinding()]
    Param(
@@ -72,4 +72,4 @@ end{
 }
 
 Get-ADUser -SearchBase "OU=Departments,DC=pharmgreen,DC=com" -Filter *| Set-LogonHours -TimeIn24Format @(8,9,10,11,12,13,14,15,16,17) -Monday -Tuesday -Wednesday -Thursday -Friday -NonSelectedDaysare NonWorkingDays
-'
+
