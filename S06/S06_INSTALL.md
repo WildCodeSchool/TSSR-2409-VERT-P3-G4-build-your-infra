@@ -4,6 +4,7 @@ Function Set-LogonHours{
    [CmdletBinding()] 
    Param( 
    [Parameter(Mandatory=$True)][ValidateRange(0,23)]$TimeIn24Format, 
+   
    [Parameter(Mandatory=$True,ValueFromPipeline=$True,ValueFromPipelineByPropertyName=$True,Position=0)]$Identity, 
    [parameter(mandatory=$False)][ValidateSet("WorkingDays", "NonWorkingDays")]$NonSelectedDaysare="NonWorkingDays", 
    [parameter(mandatory=$false)][switch]$Sunday, 
@@ -38,7 +39,7 @@ Process{
 
    $AllTheWeek="{0}{1}{2}{3}{4}{5}{6}" -f $SundayValue,$MondayValue,$TuesdayValue,$WednesdayValue,$ThursdayValue,$FridayValue,$SaturdayValue 
 
-    Timezone Check 
+   # Timezone Check 
    if ((Get-TimeZone).baseutcoffset.hours -lt 0){ 
     $TimeZoneOffset = $AllTheWeek.Substring(0,168+ ((Get-TimeZone).baseutcoffset.hours)) 
     $TimeZoneOffset1 = $AllTheWeek.SubString(168 + ((Get-TimeZone).baseutcoffset.hours)) 
