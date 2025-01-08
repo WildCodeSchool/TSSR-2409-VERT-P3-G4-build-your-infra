@@ -31,6 +31,6 @@
 - **Serveur pfsense**: 10.15.255.254 ???
 - **Serveur AD**: 10.15.0.36/27
 - **Serveur GLPI**: 10.15.0.35/27
-- **Serveur Core**(redondance): 10.15.0.36/27
+- **Serveur Core**(redondance): 10.15.0.37/27
 - **Serveur fichier**: 10.15.0.34/27
-
+- **Serveur Zabbix**: 10.15.0.38/27
