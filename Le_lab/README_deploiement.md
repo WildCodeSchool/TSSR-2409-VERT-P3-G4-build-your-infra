@@ -10,7 +10,9 @@ Voici les composants mis en place pour le laboratoire :
 - **Serveur GLPI sous Debian** : Gestion de parc informatique et helpdesk.
 - **Serveur Windows Core** : Assure la redondance du système.
 - **Serveur pfSense** : Configure les fonctionnalités de routeur et de switch (via une VM sur Proxmox).
-- **Client** : Utilisé pour paramétrer pfSense.
+- **Serveur de fichier** : Centralise tous les dossiers partagés des utilisateurs et donne accés aux utilisateurs en fonctions des règles de sécurité.
+- **Serveur Rsync** : Permet de sauvegarder tous les dossier utilisateurs (personnel, départements et services)
+- **Clients** : Permet de simulés des utilisateurs.
 
 ## Adresse IP de nos Serveurs
 
@@ -19,13 +21,13 @@ Voici les composants mis en place pour le laboratoire :
 - **Serveur GLPI** : 10.15.0.35/27
 - **Serveur Core** (redondance) : 10.15.0.37/27
 - **Serveur fichier** : 10.15.0.34/27
-- **Serveur Bareos** : 10.15.0.38/27
+- **Serveur Rsync** : 10.15.0.38/27
 
 ### Mots de passe
 
 Les mots de passe utilisés pour les différentes machines :
 
-- **Client** : `@zerty1*` (1er mot de passe à changer au démarrage `Azerty1*`)
+- **Client** : `@zerty1*` ou `@zerty` (1er mot de passe à changer au démarrage `Azerty1*`)
 - **Serveurs** : `Azerty1*`
 
 ---
@@ -38,12 +40,14 @@ Les mots de passe utilisés pour les différentes machines :
 <summary><b>Configuration du Serveur AD</b></summary>
 
 - [Configuration des GPO](Server_AD/GPO/)
+  - [GPO générales](Server_AD/GPO/S03_INSTALL_GPO.md)
+  - [Mappage des disques](Server_AD/GPO/MAPPAGE/)
 - [Création des utilisateurs](Server_AD/Utilisateur/)
-  - Guide Utilisateur
-  - Script
+  - [Guide Utilisateur](Server_AD/Utilisateur/User_Guide_Script_Users.md)
+  - [Script](Server_AD/Utilisateur/create_Users.ps1)
 - [Création des Unités Organisationnelles (OU)](Server_AD/OU/)
-  - Guide Utilisateur
-  - Script
+  - [Guide Utilisateur](Server_AD/OU/User_Guide_Script_OU.md)
+  - [Script](Server_AD/OU/OUx2.ps1)
 - [Gestion des journaux d’événements](Server_AD/Logs/)
 
 </details>
@@ -76,3 +80,16 @@ Les mots de passe utilisés pour les différentes machines :
 
 </details>
 
+/details>
+
+### Serveur Rsync
+
+<details>
+<summary><b>Configuration du Serveur Rsync</b></summary>
+
+- [Notice](Server_Rsync/notice.md)
+- [Preparation des disques](Server_Rsync/raid1_lvm.md)
+- [Mise en place sauvegarde Crédentielle](Server_Rsync/config_credential.md)
+- [Commandes de bases](Server_Rsync/command_ref.md)
+
+</details>

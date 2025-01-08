@@ -158,3 +158,13 @@ Activités et répartition des tâches
 | Martin (SM) | |
 | Martin |   |
 | Lionel |  |
+
+
+## Organisation du Github:
+
+Notre github est organisé de la façon suivante:
+- Vous trouverez des dossiers "S01, S02,..."contenant  des Readme avec un résumé des tâches à accomplir. Une fois les semaines passés ceux si se retrouveront dans dans le dossier Archives.
+- le Dossier lab contient tout nos tuto et notre organisation:
+    - Vous trouverez un Readme_deploiement ainsi qu'un dossier Deploiement_guide qui vous expliqueront les différentes étapes et vous guiderons à travers nos tutos pour voir notre travail;
+    - Vous trouverez des dossier Server_... contenant toutes les configurations et scripts nécessaires à la mise en place de cette machine.
+
