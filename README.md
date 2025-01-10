@@ -88,10 +88,10 @@ Activités et répartition des tâches
 
 | **NOM** | **Tâches effectuées** |
 | :--: | :----------: |
-| Yohann (PO) |  |
-| Lionel (SM) |  |
-| Bruno |   |
-| Martin |  |
+| Yohann (PO) | Installation Zabbix, Doc Zabbix, Config LAPS |
+| Lionel (SM) |  Mappage disque et fichier avec doc, Mise en place Rsync avec doc, Mise en place Graylog avec doc |
+| Bruno | Installation Zabbix, Config LAPS, Coinfig accés horaire |
+| Martin | mise en place dossier partagé, MAJ base de donnée LDAP |
 
 ### **Sprint 7 : semaine du 06 au 10 Janvier 2024**
 
