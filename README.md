@@ -82,7 +82,7 @@ Activités et répartition des tâches
 | Bruno |   |
 | Lionel |   |
 
-### **Sprint 6 : semaine du 02 au 03 Janvier 2024**
+### **Sprint 6 : semaine du 02 au 10 Janvier 2024**
 
 Activités et répartition des tâches
 
@@ -93,7 +93,7 @@ Activités et répartition des tâches
 | Bruno | Installation Zabbix, Config LAPS, Coinfig accés horaire |
 | Martin | mise en place dossier partagé, MAJ base de donnée LDAP |
 
-### **Sprint 7 : semaine du 06 au 10 Janvier 2024**
+### **Sprint 7 : semaine du 13 au 17 Janvier 2024**
 
 Activités et répartition des tâches
 
@@ -104,7 +104,7 @@ Activités et répartition des tâches
 | Martin |   |
 | Yohann |  |
 
-### **Sprint 8 : semaine du 13 au 17 Janvier 2024**
+### **Sprint 8 : semaine du 20 au 24 Janvier 2024**
 
 Activités et répartition des tâches
 
@@ -115,7 +115,7 @@ Activités et répartition des tâches
 | Yohann |   |
 | Lionel |   |
 
-### **Sprint 9 : semaine du 20 au 24 Janvier 2024**
+### **Sprint 9 : semaine du 27 au 31 Janvier 2024**
 
 Activités et répartition des tâches
 
@@ -126,7 +126,7 @@ Activités et répartition des tâches
 | Bruno |   |
 | Lionel |   |
 
-### **Sprint 10 : semaine du 27 au 31 Janvier 2024**
+### **Sprint 10 : semaine du 03 au 07 Janvier 2024**
 
 Activités et répartition des tâches
 
@@ -137,7 +137,7 @@ Activités et répartition des tâches
 | Bruno |   |
 | Martin |   |
 
-### **Sprint 11 : semaine du 03 au 07 Févier 2024**
+### **Sprint 11 : semaine du 17 au 21 Févier 2024**
 
 Activités et répartition des tâches
 
@@ -148,16 +148,6 @@ Activités et répartition des tâches
 | Yohann |   |
 | Martin |   |
 
-### **Sprint 12 : semaine du 17 au 21 Févier 2024**
-
-Activités et répartition des tâches
-
-| **NOM** | **Tâches effectuées** |
-| :--: | :----------: |
-| Bruno (PO) |  |
-| Martin (SM) | |
-| Martin |   |
-| Lionel |  |
 
 
 ## Organisation du Github:
