@@ -22,7 +22,7 @@ Voici les composants mis en place pour le laboratoire :
 - **Serveur Zabbix**  : 10.15.0.37/27
 - **Serveur fichier** : 10.15.0.34/27
 - **Serveur Rsync** : 10.15.0.38/27
-- **Server Redondance: 10.15.0.39/27
+- **Server Redondance** : 10.15.0.39/27
 
 ### Mots de passe
 
