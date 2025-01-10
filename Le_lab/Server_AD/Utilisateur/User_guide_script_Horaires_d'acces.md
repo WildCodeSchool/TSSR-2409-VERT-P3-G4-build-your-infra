@@ -14,42 +14,19 @@ Avant d'exécuter le script, assurez-vous que :
 ---
 
 ## Déroulement du script
-1. **Importation des données du fichier CSV :**
-   - Le script lit le fichier CSV défini dans la variable `$CSVFile` en utilisant la commande `Import-CSV`.
 
-2. **Parcours des lignes CSV :**
-   - Pour chaque ligne du fichier, le script :
-     - Extrait les informations comme le prénom, le nom, la fonction, etc.
-     - Crée des variables pour gérer ces données.
+Il faut savoir que :
 
-3. **Vérification de l'existence de l'utilisateur :**
-   - Le script utilise la commande `Get-ADUser` pour vérifier si un compte avec le même `SamAccountName` existe déjà dans Active Directory.
-   - Si l'utilisateur existe, un avertissement est affiché dans la console.
+-TimeIn24Format permet de définir les heures pour autoriser l'ouverture de session. Le fait d'indiquer "6", permet d'autoriser le créneau de 6h à 7h.
 
-4. **Création de l'utilisateur :**
-   - Si l'utilisateur n'existe pas, la commande `New-ADUser` est utilisée pour créer un nouveau compte utilisateur avec les informations suivantes :
-     - **Nom complet** : `Nom` suivi de `Prénom`.
-     - **Identifiant de connexion** : Formaté comme `nom.prenom`.
-     - **Email professionnel** : `nom.prenom@Pharmgreen.com`.
-     - **Mot de passe** : “P@ssword123456789”.
-     - **Unité organisationnelle** : Basée sur la valeur dans le champ « Département ».
-     - **Autres champs** : Fonction, email, manager, etc.
-   - Le compte utilisateur est activé et l’option pour changer le mot de passe à la première connexion est activée.
+-Monday -Tuesday -Wednesday -Thursday permet de spécifier tous les jours sur lesquels ajouter cette autorisation
+
+-NonSelectedDaysare NonWorkingDays permet de déterminer une politique pour les jours non spécifiés (dans la liste précédente). Avec la valeur "NonWorkingDays", on considère que ce sont des jours non travaillés, et donc, que l'on refuse l'ouverture de session. Sinon, vous pouvez utiliser la valeur "WorkingDays"
 
 ---
 
-## Paramètres du script
-- **Fichier CSV :** Le chemin est défini dans la variable `$CSVFile`. Modifiez cette variable pour correspondre à l’emplacement de votre fichier CSV.
-- **Mot de passe par défaut :** Défini dans `$UtilisateurMotDePasse`. Vous pouvez le personnaliser selon vos besoins.
-- **Structure de l'OU :** La valeur à renseigner dans « Path » doit refléter la structure de votre Active Directory.
 
----
 
-## Exemple de fichier CSV
-```csv
-Prenom,Nom,fonction,Département,Managernom
-Jean,Dupont,Ingénieur,IT,Paul Martin
-Marie,Curie,Scientifique,R&D,Albert Einstein
-```
+
 
 
