@@ -102,7 +102,7 @@ Activités et répartition des tâches
 | Lionel (PO) |  |
 | Bruno (SM) |  |
 | Martin |   |
-| Lionel |  |
+| Yohann |  |
 
 ### **Sprint 8 : semaine du 13 au 17 Janvier 2024**
 
