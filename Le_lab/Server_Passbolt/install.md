@@ -6,7 +6,7 @@ Ce guide détaille toutes les étapes pour installer et configurer Passbolt sur 
 
 ## Prérequis
 
-1. Un serveur Debian 12 sur Proxmox.
+1. Un serveur Debian 12.
 2. Un serveur DNS Active Directory avec une entrée DNS configurée pour le domaine.
 3. Accès root au serveur Debian 12.
 
@@ -135,10 +135,40 @@ Ce guide détaille toutes les étapes pour installer et configurer Passbolt sur 
 
 ---
 
-## Étape 8 : Création de l'utilisateur administrateur
+## Étape 8 : Configuration
 
-1. Une fois Passbolt accessible, suivez les instructions pour créer le premier utilisateur administrateur via l'interface web.
- tuto a finir avec capture
+1. Entrer les informations de la "Database" renseigné lors de l'installation:
+   
+![Capture d'écran 2025-01-15 164534](https://github.com/user-attachments/assets/91d517b4-bcac-4821-a21b-e8db546eef2e)
+
+2. Entrer l'identifiant de la boîte mail dédié:
+
+![Capture d'écran 2025-01-15 164643](https://github.com/user-attachments/assets/3bba5e99-661b-48c9-aa07-a09e59024fa5)
+
+3. Entrer l'adresse de votre serveur:
+
+![Capture d'écran 2025-01-15 164720](https://github.com/user-attachments/assets/c34dc844-42ee-492c-a50a-65db7ce1e725)
+
+4. Vos coordonnées:
+
+![Capture d'écran 2025-01-15 171625](https://github.com/user-attachments/assets/6c00c3d8-4222-4122-a452-62e25d9c42d0)
+
+5. Les informations de la boîte mail dédié (configuration smtp):
+
+![Capture d'écran 2025-01-15 171648](https://github.com/user-attachments/assets/4d131c2d-3891-4704-b123-6429bac5e650)
+
+6. Il faut maintenant créer le premier utilisateur:
+   
+![Capture d'écran 2025-01-15 171729](https://github.com/user-attachments/assets/02a4a185-4094-4387-a52b-d8a866b7e652)
+
+7. Il faut ensuite créer la phrase de sécurité:
+
+![Capture d'écran 2025-01-15 172033](https://github.com/user-attachments/assets/71a34f46-3109-4700-bcbb-65c35b2b2fbb)
+
+8. Et nous voilà connecté:
+
+![Capture d'écran 2025-01-15 172123](https://github.com/user-attachments/assets/77f5c9dc-6356-46a2-bed1-871856175185)
+
 ---
 
 
