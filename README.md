@@ -99,10 +99,10 @@ Activités et répartition des tâches
 
 | **NOM** | **Tâches effectuées** |
 | :--: | :----------: |
-| Lionel (PO) |  |
-| Bruno (SM) |  |
-| Martin |   |
-| Yohann |  |
+| Lionel (PO) | Mise en place passbolt |
+| Bruno (SM) | Mise en place de iredmail |
+| Martin | Mise en place de iredmail  |
+| Yohann | Surveillance du pare feu avec Zabbix |
 
 ### **Sprint 8 : semaine du 20 au 24 Janvier 2024**
 
