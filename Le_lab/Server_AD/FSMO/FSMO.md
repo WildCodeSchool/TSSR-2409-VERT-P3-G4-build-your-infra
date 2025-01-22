@@ -10,8 +10,8 @@ Il est à noter qu’il ne peut pas y avoir plusieurs maîtres d’opérations p
 
 Voici les cinq rôles que nous allons étudier :
 
-cours-active-directory-23
-### II. Rôle « Maître d’attribution des noms de domaine »
+
+### II. Rôle « Maître d’attribution des noms de domaine »  
 Le maître d’opération qui détient ce rôle est unique au sein de la forêt. Il est aussi le seul autorisé à distribuer des noms de domaine aux contrôleurs de domaine, lors de la création d’un nouveau domaine.
 
 De ce fait, il est notamment utilisé lors de la création d’un nouveau domaine. Le contrôleur de domaine à l’initiative de la création doit impérativement être en mesure de contacter le contrôleur de domaine disposant du rôle FSMO « Maître d’attribution des noms de domaine » sinon la procédure échouera. Enfin, je tiens à préciser qu’il a également pour mission de renommer les noms de domaine.
@@ -23,7 +23,7 @@ Pour rappel, le schéma désigne la structure de l’annuaire Active Directory, 
 
 En résumé, il est unique au sein d’une forêt et gère la structure du schéma.
 
-IV. Rôle « Maître RID »
+### IV. Rôle « Maître RID »
 Comme vous le savez déjà, les objets créés au sein de l’annuaire Active Directory disposent de plusieurs identifiants uniques. Parmi eux, il y a notamment l'"objectGUID" et le "DistinguishedName" mais aussi l’identifiant de sécurité « objectSID » (SID). C’est ce dernier qui nous intéresse dans le cadre du maître RID.
 
 Pourquoi RID ?
@@ -35,7 +35,8 @@ Bien sûr, tous les contrôleurs de domaine ne vont pas épuiser le pool de RID 
 
 En résumé, il est unique au sein d’un domaine et attribue des blocs de RID aux contrôleurs de domaine pour s'assurer que les SID des objets soient uniques.
 
-L'Active Directory et les notions de SID, RID et SID History
+L'Active Directory et les notions de SID, RID et SID History 
+
 ### V. Rôle « Maître d’infrastructure »
 Unique au sein d’un domaine, le contrôleur de domaine qui dispose du rôle de "Maître d’infrastructure" gère les références entre plusieurs objets.
 
