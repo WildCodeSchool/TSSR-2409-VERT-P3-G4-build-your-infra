@@ -17,11 +17,11 @@ Ce tutoriel vous explique comment transférer les rôles FSMO d'un contrôleur d
 
 Pour accéder à l'outil NTDSUTIL sur un contrôleur de domaine Active Directory, il suffit d'appeler "ntdsutil.exe" depuis une invite "Exécuter" ou de lancer l'outil à partir d'une Invite de commande ou une console PowerShell. C'est un outil qui s'utilise en mode interactif.  
 
-   ` ntdsutil.exe ` 
+       ` ntdsutil.exe ` 
 
 Pour obtenir de l'aide quant à l'utilisation de ntdsutil, il suffit de saisir "?" et vous verrez les commandes disponibles. Toujours utile en cas d'oubli.
 
-  ` ntdsutil ` 
+       ` ntdsutil ` 
   
 III. Procédure pour transférer les rôles FSMO  
 
@@ -29,25 +29,26 @@ A. Activer le mode maintenance FSMO
 
 La première étape consiste à activer le mode maintenant FSMO. Pour passer en mode "fsmo maintenance" il faut saisir la commande suivante :  
 
- ` role ` 
+      ` role ` 
 Ensuite, pour voir les commandes disponibles, c'est le même principe que celui évoqué précédemment, il suffit de saisir un "?" pour afficher les commandes disponibles.
 
- ` ntdsutil2 `  
+      ` ntdsutil2 `  
  
 B. Connexion au second serveur  
 
 Il faut établir une connexion avec le serveur sur lequel on veut transférer un ou des rôles. Pour cela, dans le mode « fsmo maintenance », tapez la commande :
 
-  ` connections ` 
+      ` connections ` 
+      
 Vous êtes désormais en mode « server connections ». Pour établir la connexion avec le serveur, tapez la commande suivant en remplaçant par le nom du serveur :  
 
-` connect to server <nom_serveur> `  
+     ` connect to server <nom_serveur> `  
 
 Patientez le temps que la connexion soit établie.  
 
 Quand c'est fait, vous pouvez quitter le mode connexion pour revenir au mode précédent. Tapez simplement ceci :  
 
- ` q ` 
+      ` q ` 
  
 Vous voilà de retour en mode fsmo maintenance.  
 
@@ -57,7 +58,7 @@ Désormais, nous allons voir comment transférer les différents rôles FSMO, un
 
 Transférer le rôle de Maître RID  
 
-  ` transfer RID master ` 
+     ` transfer RID master ` 
   
 Une boite de dialogue apparaît pour que vous confirmiez vouloir transférer le rôle sur le serveur avec lequel vous avez établie une connexion. Elle apparaîtra pour le transfert de chacun des rôles.  
 
