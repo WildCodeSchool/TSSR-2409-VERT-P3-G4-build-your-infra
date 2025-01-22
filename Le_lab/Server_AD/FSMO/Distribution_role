@@ -1,7 +1,7 @@
-|   |   |
+| **Role** | **DC** |
 | :--: | :----------: |
-| le rôle de Maître RID |  |
-| le rôle de contrôleur de schéma | |
-| le rôle de Maître d'infrastructure | |
-| le rôle de Maître d'attribution des noms de domaine | |
-| le rôle d’Émulateur PDC | |
+| contrôleur de schéma | SrvWin-ADDS-GUI  |
+| Maître d'infrastructure |  |
+| Maître d'attribution des noms de domaine |  Srvwin-core-R  |
+|  Maître RID |  srv-fichier  |
+|  Émulateur PDC | SrvWin-ADDS-GUI   |
