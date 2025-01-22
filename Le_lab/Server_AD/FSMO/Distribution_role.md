@@ -56,11 +56,12 @@ C. Transférer les rôles FSMO
 Désormais, nous allons voir comment transférer les différents rôles FSMO, un par un.  
 
 Transférer le rôle de Maître RID  
+
   ` transfer RID master ` 
   
-Une boite de dialogue apparaît pour que vous confirmiez vouloir transférer le rôle sur le serveur avec lequel vous avez établie une connexion. Elle apparaîtra pour le transfert de chacun des rôles.
+Une boite de dialogue apparaît pour que vous confirmiez vouloir transférer le rôle sur le serveur avec lequel vous avez établie une connexion. Elle apparaîtra pour le transfert de chacun des rôles.  
 
-![Capture d'écran 2025-01-22 144957](https://github.com/user-attachments/assets/b422ae35-553e-4ed9-9bec-06c55c919b21)
+![Capture d'écran 2025-01-22 144957](https://github.com/user-attachments/assets/b422ae35-553e-4ed9-9bec-06c55c919b21)  
 
 Transfert du rôle de contrôleur de schéma  
 
