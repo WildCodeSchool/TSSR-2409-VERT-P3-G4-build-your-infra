@@ -52,13 +52,14 @@ Par défaut, WSUS place les nouveaux ordinateurs dans le groupe "Ordinateurs non
 #### Paramètres à configurer :
 1. **Spécifier l’emplacement intranet du service de mise à jour Microsoft** :
    - Activez ce paramètre.
-   - Entrez l’URL de votre serveur WSUS, par exemple : `http://srv-wsus.it-connect.local:8530`.
+   - Entrez l’URL de votre serveur WSUS, par exemple : `http://dns-du-serveur:8530`.
 2. **Configuration du service Mises à jour automatique** :
    - Activez ce paramètre.
    - Choisissez l’option **4 - Téléchargement automatique et planification des installations**.
    - Définissez les plages horaires pour les mises à jour, par exemple : **12:00** tous les jours en fin de mois.
 3. **Ne pas se connecter à des emplacements Internet Windows Update** :
    - Activez ce paramètre pour forcer l’utilisation du WSUS.
+![Capture d'écran 2025-01-26 144740](https://github.com/user-attachments/assets/11bc5d90-4f42-46f7-b897-df9ffd04a5db)
 
 ---
 
@@ -71,6 +72,7 @@ Par défaut, WSUS place les nouveaux ordinateurs dans le groupe "Ordinateurs non
      - Activez ce paramètre et entrez "PC" comme nom de groupe cible.
    - **Désactiver le redémarrage automatique pour les mises à jour pendant les heures d’activité** :
      - Activez ce paramètre et définissez une plage horaire (ex. **07:00 à 19:00**).
+![Capture d'écran 2025-01-26 145118](https://github.com/user-attachments/assets/a89c76ea-1a03-47d7-81af-6019606772ee)
 
 ---
 
@@ -83,6 +85,7 @@ Par défaut, WSUS place les nouveaux ordinateurs dans le groupe "Ordinateurs non
      - Activez ce paramètre et entrez "Serveurs" comme nom de groupe cible.
    - **Désactiver le redémarrage automatique pour les mises à jour pendant les heures d’activité** :
      - Activez ce paramètre et définissez une plage horaire (ex. **05:00 à 23:00**).
+![Capture d'écran 2025-01-26 145326](https://github.com/user-attachments/assets/7fe6eeef-4e29-4dd6-870a-c3300cc6e1f1)
 
 ---
 
