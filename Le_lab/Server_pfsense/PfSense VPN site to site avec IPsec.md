@@ -10,7 +10,8 @@ On établit alors un VPN au travers Internet afin de joindre les deux réseaux m
 
 ## 2. Architecture
 Pour illustrer la mise en place de notre VPN Site-to-Site entre nos routeurs, nous allons utiliser le pare-feu Pfsense et se baser sur le schéma de test suivant :  
-[SCHEMA EN COURS DE CRÉATION]  
+![VPN_site_to_site_v2](https://github.com/user-attachments/assets/5ecc9e12-472e-4a44-9042-2c16765797c6)
+
 Nous aurons donc une interface WAN (10.0.0.X/24) et LAN (172.24.0.X/24 et 10.15.0.X/27) sur chacun de nos Pfsense, le but final sera donc que les deux clients (10.15.0.32 et 172.24.0.0) puissent communiquer entre eux via ce tunnel.  
 
 ## 3. Mise en place
