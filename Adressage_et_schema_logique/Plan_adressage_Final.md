@@ -37,4 +37,4 @@
 - **Serveur Core**(redondance): 10.15.0.39/27
 - **Serveur Mail**: 10.15.0.40/27
 - **Serveur Freepbx**: 10.15.0.41/27
-
+- **Serveur WSUS**: 10.15.0.42/27
