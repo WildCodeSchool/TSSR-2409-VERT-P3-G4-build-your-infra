@@ -10,7 +10,7 @@ Voici les composants mis en place pour le laboratoire :
 - **Serveur Windows Core** : Assure la redondance du système.
 - **Serveur WSUS**: Automatisation des MAJ sur les machines (serveur et pc) du domaine
 - **Serveur GLPI** : Gestion de parc informatique et helpdesk.
-- **Serveur Garylog** : Centralisation des logs de nos serveurs
+- **Serveur Graylog** : Centralisation des logs de nos serveurs
 - **Serveur pfSense** : Configure les fonctionnalités de routeur et de switch (via une VM sur Proxmox).
 - **Serveur de fichier** : Centralise tous les dossiers partagés des utilisateurs et donne accés aux utilisateurs en fonctions des règles de sécurité.
 - **Serveur Rsync** : Permet de sauvegarder tous les dossier utilisateurs (personnel, départements et services).
