@@ -1,4 +1,7 @@
 # Objectifs de la semaine
+## Avancement en fin de semaine
+
+![Capture d'écran 2025-01-31 104711](https://github.com/user-attachments/assets/5f61445f-14ca-4bb3-9e65-4b0846900642)
 
 ## Principaux 
 1. JOURNALISATION - Mise en place d'une gestion des logs centralisée
