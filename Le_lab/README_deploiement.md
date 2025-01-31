@@ -17,6 +17,7 @@ Voici les composants mis en place pour le laboratoire :
 - **Serveur ZABBIX** : Permet la surveillance de pfsense.
 - **Serveur Mail**: Permet l'envoi et la reception de courrier électronique.
 - **Serveur Freepbx**: Gère la VOIP.
+- **Serveur PASSBOLT**: Protège et stock les MDP
 - **Serveur Guacamole**: Permet de centraliser la connexion distante à nos serveur et ceux de notre partenaire.
 - **Clients** : Permet de simulés des utilisateurs.
 
@@ -32,6 +33,7 @@ Voici les composants mis en place pour le laboratoire :
 - **Serveur Mail**: 10.15.0.40/27
 - **Serveur Freepbx**: 10.15.0.41/27
 - **Serveur WSUS**: 10.15.0.42/27
+- **Serveur PASSBOLT**: 10.15.0.43/27
 
 - **Serveur Web**: 10.15.6.2/24
 - **Serveur Guacamole**: 10.15.6.3/24
