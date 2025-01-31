@@ -2,7 +2,7 @@
 
 ## Avancement en fin de semaine
 
-![mettre image tableau]()
+![Capture d'écran 2025-01-31 104701](https://github.com/user-attachments/assets/7b6604ed-cd9d-4779-aa14-40fd8cc9627a)
 
 ## Principaux 
 
