@@ -1,5 +1,9 @@
 # Objectifs de la semaine
 
+## Avancement en fin de semaine
+
+![Capture d'écran 2025-01-31 104729](https://github.com/user-attachments/assets/d14df6aa-d056-4d4b-9596-53fc2af2f0a3)
+
 ## Principaux 
 
 1. SÉCURITÉ - Mettre en place un serveur de gestion des mises à jour **WSUS**
