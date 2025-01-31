@@ -163,7 +163,7 @@ nano /etc/guacamole/guacamole.properties
 mysql-hostname: 127.0.0.1
 mysql-port: 3306
 mysql-database: guacadb
-mysql-username: guaca_billu
+mysql-username: pharmgreen
 mysql-password: Azerty1*
 ```
 
