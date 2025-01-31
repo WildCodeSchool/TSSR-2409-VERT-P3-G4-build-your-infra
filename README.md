@@ -148,8 +148,6 @@ Activités et répartition des tâches
 | Yohann |   |
 | Martin |   |
 
-
-
 ## Organisation du Github:
 
 Notre github est organisé de la façon suivante:
