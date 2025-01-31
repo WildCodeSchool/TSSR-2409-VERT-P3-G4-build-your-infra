@@ -1,5 +1,9 @@
 # Objectifs de la semaine
 
+## Avancement en fin de semaine
+
+![Capture d'écran 2025-01-31 104903](https://github.com/user-attachments/assets/3cee2b8b-7c77-4b44-a18f-2e20ae5c096d)
+
 ## Principaux 
 1. MESSAGERIE - Mettre en place un serveur de messagerie
 	1. Utilisation d'une des solutions suivantes :
