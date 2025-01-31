@@ -7,7 +7,7 @@ https://sangomakb.atlassian.net/wiki/spaces/FP/pages/230326391/FreePBX+17+Instal
 ### 1️⃣ `Installation de FreePbx`
 ### 2️⃣ `Configuration WebUi`
 ### 3️⃣ `Création d'Utilisateur`
-### 4️⃣ `SIP`
+### 4️⃣ `3CX`
 ### 5️⃣ `Intégration à l'AD`
 ### 6️⃣ ``
 ### 7️⃣ ``
@@ -95,7 +95,7 @@ https://sangomakb.atlassian.net/wiki/spaces/FP/pages/230326391/FreePBX+17+Instal
 
 ***
 
-### 4️⃣ `SIP`
+### 4️⃣ `3CX`
 
 #### 4.1) Se rendre sur l'Url et télécharger:
 
