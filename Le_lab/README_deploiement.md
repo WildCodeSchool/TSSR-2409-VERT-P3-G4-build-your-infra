@@ -36,7 +36,7 @@ Voici les composants mis en place pour le laboratoire :
 - **Serveur PASSBOLT**: 10.15.0.43/27
 
 - **Serveur Web**: 10.15.6.2/24
-- **Serveur Guacamole**: 10.15.6.3/24
+- **Serveur Guacamole**: 10.15.7.2/24
 
 ### Mots de passe
 
