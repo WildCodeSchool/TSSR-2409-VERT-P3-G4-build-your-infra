@@ -110,10 +110,10 @@ Activités et répartition des tâches
 
 | **NOM** | **Tâches effectuées** |
 | :--: | :----------: |
-| Bruno (PO) |  |
-| Martin (SM) | |
-| Yohann |   |
-| Lionel |   |
+| Bruno (PO) | Prise information RDP et rôle FSMO |
+| Martin (SM) | Prise information RDP|
+| Yohann | Mise en place VPN avec partenaire |
+| Lionel | Mise en place serveur WSUS |
 
 ### **Sprint 9 : semaine du 27 au 31 Janvier 2024**
 
@@ -121,10 +121,10 @@ Activités et répartition des tâches
 
 | **NOM** | **Tâches effectuées** |
 | :--: | :----------: |
-| Martin (PO) |  |
-| Yohann (SM) |  |
-| Bruno |   |
-| Lionel |   |
+| Martin (PO) | Mise en place Serveur FreePBX |
+| Yohann (SM) | Mise en place RDp et serveur Guacamole |
+| Bruno | Mise en place DMZ + serveur Mail |
+| Lionel | Mise en place serveur Mail et Maj documentations |
 
 ### **Sprint 10 : semaine du 03 au 07 Janvier 2024**
 
