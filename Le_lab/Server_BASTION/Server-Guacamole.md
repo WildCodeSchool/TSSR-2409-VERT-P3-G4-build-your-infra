@@ -116,6 +116,13 @@ apt-get install mariadb-server
 mysql_secure_installation
 ```
 
+- **Connectez-vous en root sur MariaDB** :
+
+```
+-u root -p
+```
+
+
 - **Créez la base de données et un utilisateur** :
 
 ```
