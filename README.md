@@ -123,8 +123,8 @@ Activités et répartition des tâches
 | :--: | :----------: |
 | Martin (PO) | Mise en place Serveur FreePBX |
 | Yohann (SM) | Mise en place RDp et serveur Guacamole |
-| Bruno | Mise en place DMZ + serveur Mail |
-| Lionel | Mise en place serveur Mail et Maj documentations |
+| Bruno | Mise en place DMZ + serveur WEB |
+| Lionel | Mise en place serveur WEB et Maj documentations |
 
 ### **Sprint 10 : semaine du 03 au 07 Janvier 2024**
 
