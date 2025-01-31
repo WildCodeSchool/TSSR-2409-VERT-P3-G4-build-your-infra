@@ -11,7 +11,7 @@ Sur la VM webserver, exécute les lignes de commandes suivantes pour mettre à j
   ` apt install apache2 -y `
 
 Vérifie le statut du service avec systemctl status apache2  
-  `systemctl status apacha2`
+  `systemctl status apache2`
 
 ### 🔬 Étape 3 - Configuration de la page d'accueil  
 
