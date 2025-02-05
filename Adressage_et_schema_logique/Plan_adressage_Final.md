@@ -38,7 +38,6 @@
 - **Serveur Mail**: 10.15.0.40/27
 - **Serveur Freepbx**: 10.15.0.41/27
 - **Serveur WSUS**: 10.15.0.42/27
-- **Serveur PASSBOLT**: 10.15.0.42/27
-
+- **Serveur PASSBOLT**: 10.15.0.36/27
 - **Serveur Web**: 10.15.6.2/24
 - **Serveur Guacamole**: 10.15.7.2/24
