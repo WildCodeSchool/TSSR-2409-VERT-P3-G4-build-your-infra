@@ -1,4 +1,4 @@
 # Schéma logique société Pharmgreen
 
-![CONF PROJET3](https://github.com/user-attachments/assets/3b51cea7-ea81-49d9-bcae-28fb1a2b1ffb)
+![CONF PROJET3](https://github.com/user-attachments/assets/4ab3e209-3373-469d-8770-9bfc60bb52b5)
 
