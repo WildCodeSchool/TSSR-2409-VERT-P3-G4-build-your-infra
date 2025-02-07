@@ -15,14 +15,14 @@
      - **Protocol** : Any
      - **Source** : `VLAN5 net`
      - **Destination** : Any (ou choisissez `WAN net` si disponible).
--  **Ajoutez une règle pour autoriser les réponses DHCP** :
-   - **Action** : Pass
-   - **Protocol** : UDP
-   - **Source** : `192.168.0.2`
-   - **Source Port** : 67-68
-   - **Destination** : Any ou les sous-réseaux des VLANs clients (`192.168.10.0/24`, `192.168.20.0/24`, etc.).
-   - **Destination Port** : 68
-   - **Description** : "Autoriser les réponses DHCP depuis le serveur AD".
+   - **Ajoutez une règle pour autoriser les réponses DHCP** :
+     - **Action** : Pass
+     - **Protocol** : UDP
+     - **Source** : `192.168.0.2`
+     - **Source Port** : 67-68
+     - **Destination** : Any ou les sous-réseaux des VLANs clients (`192.168.10.0/24`, `192.168.20.0/24`, etc.).
+     - **Destination Port** : 68
+     - **Description** : "Autoriser les réponses DHCP depuis le serveur AD".
 3. Cliquez sur **Save** et **Apply Changes**.
 
 #### Règles pour **VLAN 10 (Administrateurs)**
