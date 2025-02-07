@@ -1,6 +1,4 @@
-
-
-## Règles de pare-feu pour les VLAN
+# Règles de pare-feu pour les VLAN
 
 #### Règles pour **VLAN 5 (DC)**
 1. Accédez à **Firewall > Rules > VLAN5**.
@@ -131,15 +129,3 @@
 3. Cliquez sur **Save** et **Apply Changes**.
 
 ---
-
-### 4. Configurer les règles NAT pour Internet
-
-1. Accédez à **Firewall > NAT > Outbound**.
-2. Si le mode NAT est "Automatic Outbound NAT rule generation", pfSense gère automatiquement le NAT pour permettre l'accès à Internet depuis tous les VLANs.
-3. Si le mode NAT est "Manual Outbound NAT rule generation" :
-   - Ajoutez une règle pour chaque VLAN :
-     - **Interface** : WAN
-     - **Source** : Réseau du VLAN (par exemple, `192.168.0.0/30` pour VLAN 5).
-     - **Destination** : Any.
-   - Répétez pour chaque VLAN.
-   - Cliquez sur **Save** et **Apply Changes**.
