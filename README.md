@@ -126,16 +126,16 @@ Activités et répartition des tâches
 | Bruno | Mise en place DMZ + serveur WEB |
 | Lionel | Mise en place serveur WEB et Maj documentations |
 
-### **Sprint 10 : semaine du 03 au 07 Janvier 2024**
+### **Sprint 10 : semaine du 03 au 07 Février 2024**
 
 Activités et répartition des tâches
 
 | **NOM** | **Tâches effectuées** |
 | :--: | :----------: |
-| Yohann (PO) |  |
-| Lionel (SM) |  |
-| Bruno |   |
-| Martin |   |
+| Yohann (PO) | Congés électrique |
+| Lionel (SM) | Mise à niveau infra |
+| Bruno | Mise à niveau infra |
+| Martin | Mise à niveau infra |
 
 ### **Sprint 11 : semaine du 17 au 21 Févier 2024**
 
