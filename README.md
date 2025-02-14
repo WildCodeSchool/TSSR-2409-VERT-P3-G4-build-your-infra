@@ -143,10 +143,10 @@ Activités et répartition des tâches
 
 | **NOM** | **Tâches effectuées** |
 | :--: | :----------: |
-| Lionel (PO) |  |
-| Bruno (SM) |  |
-| Yohann |   |
-| Martin |   |
+| Lionel (PO) |Planification |
+| Bruno (SM) | Planification |
+| Yohann | Planification |
+| Martin | Planification |
 
 ## Organisation du Github:
 
